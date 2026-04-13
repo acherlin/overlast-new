@@ -1,9 +1,9 @@
 package com.overlast.packet;
 
-import com.overlast.OverLast;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
+import com.overlast.OverLast;
 
 public class OverPackets {
 	
@@ -13,9 +13,7 @@ public class OverPackets {
 		
 		net = NetworkRegistry.INSTANCE.newSimpleChannel(OverLast.MOD_ID);
 		registerMessage(HUDRenderPacket.class, HUDRenderPacket.HUDRenderMessage.class);
-		registerMessage(SummonInfoPacket.class, SummonInfoPacket.SummonInfoMessage.class);
 		registerMessage(ConfigPacket.class, ConfigPacket.ConfigMessage.class);
-		registerMessage(SeasonPacket.class, SeasonPacket.SeasonMessage.class);
 	}
 	
 	// Packet ID to keep the packets separate.

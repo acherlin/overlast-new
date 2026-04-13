@@ -1,15 +1,15 @@
 [
   {
-    "modid": "${mod_id}",
-    "name": "${mod_name}",
-    "description": "${mod_description}",
-    "version": "${mod_version}",
-    "mcversion": "1.12.2",
-    "url": "${mod_url}",
-    "updateUrl": "${mod_update_json}",
-    "authorList": ["${mod_authors}"],
-    "credits": "${mod_credits}",
-    "logoFile": "${mod_logo_path}",
+    "modid": "overlast",
+    "name": "Parasites Addon : OverLast-Lite",
+    "description": "Parasites Addon,Added a new HUD Bar to display Evolution Points.",
+    "version": "1.12.2-v0.0.1",
+    "mcversion": "",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["QB,Elflia"],
+    "credits": "",
+    "logoFile": "",
     "screenshots": [],
     "dependencies": []
   }

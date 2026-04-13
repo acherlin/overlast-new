@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-      "layer0": "overlast:items/wooden_sword_plus_held"
-    }
-}

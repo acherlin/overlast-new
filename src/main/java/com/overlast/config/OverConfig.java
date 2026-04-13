@@ -1,18 +1,17 @@
 package com.overlast.config;
 
-import com.overlast.OverLast;
-import com.overlast.packet.ConfigPacket;
-import com.overlast.packet.OverPackets;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+import com.overlast.OverLast;
+import com.overlast.packet.ConfigPacket;
+import com.overlast.packet.OverPackets;
 
 @Config(modid = OverLast.MOD_ID, name = "OverLast/" + OverLast.MOD_NAME, category="")
 public class OverConfig {
@@ -25,15 +24,10 @@ public class OverConfig {
 	@Config.Name("mechanics")
 	public static final Mechanics MECHANICS = new Mechanics();
 
-	@Config.Name("seasons")
-	public static final Seasons SEASONS = new Seasons();
 
-	@Config.Name("custom")
-	public static final Custom CUSTOM = new Custom();
 
 	// This deals with changed the config values in Forge's GUI in-game.
 	// It also deals with syncing some config values from the server to the client, so everything doesn't get messed up.
-	//用于修改配置文件后游戏内立刻生效
 	@Mod.EventBusSubscriber
 	private static class ConfigEvents {
 		
@@ -44,24 +38,21 @@ public class OverConfig {
 			if (event.getModID().equals(OverLast.MOD_ID)) {
 				
 				ConfigManager.sync(OverLast.MOD_ID, Config.Type.INSTANCE);
-
 			}
 		}
 		
-		@SubscribeEvent(priority = EventPriority.HIGH)
+		@SubscribeEvent
 		public static void onLogin(PlayerLoggedInEvent event) {
 			
 			// Player instance
 			EntityPlayer player = event.player;
 			
 			if (player instanceof EntityPlayerMP) {
+				
 				// Send server config values to the client. This will not affect the client's config file; it's temporary stuff.
-				// 向客户端发送服务器配置值。这不会影响客户端的配置文件，因为它是临时文件。
-				IMessage msg = new ConfigPacket.ConfigMessage(OverConfig.MECHANICS.showRequestDirtyClock,OverConfig.MECHANICS.enableSanity, OverConfig.MECHANICS.sanityScale ,OverConfig.MECHANICS.naturalEvolutionScale,OverConfig.MECHANICS.enableTemperature,OverConfig.MECHANICS.temperatureScale,
-						OverConfig.MECHANICS.enableCourage,OverConfig.MECHANICS.courageScale,OverConfig.MECHANICS.enableParasitic,OverConfig.MECHANICS.parasiticScale,OverConfig.MECHANICS.enableRadio,OverConfig.SEASONS.aenableSeasons, OverConfig.SEASONS.winterLength, OverConfig.SEASONS.springLength, OverConfig.SEASONS.summerLength, OverConfig.SEASONS.autumnLength,OverConfig.SEASONS.defaultSeason,OverConfig.SEASONS.enableSummerParasiteEffect,OverConfig.SEASONS.enableSummerPlayerEffect,OverConfig.SEASONS.enableWinterParasiteEffect,OverConfig.SEASONS.enableWinterPlayerEffect,OverConfig.MECHANICS.enableLightEffect,OverConfig.MECHANICS.enableDailyBOSS);
+				IMessage msg = new ConfigPacket.ConfigMessage(OverConfig.MECHANICS.showRequestDirtyClock);
 				OverPackets.net.sendTo(msg, (EntityPlayerMP) player);
 			}
 		}
 	}
-
 }

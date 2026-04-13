@@ -1,10 +1,14 @@
 package com.overlast;
 
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.*;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartedEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,9 +18,9 @@ public class OverLast {
 	// Basic mod constants.
 	public static final String MOD_ID = "overlast";
 	public static final String MOD_NAME = "OverLast";
-	public static final String VERSION = "0.3.0";
+	public static final String VERSION = "0.0.2";
 	public static final String MCVERSION = "1.12";
-	public static final String DEPENDENCIES = "required-after:forge@[14.23.1.2611,);required-after:srparasites@[1.10.21,);after:sereneseasons;after:playerrevive;after:cgm;after:dynamicstealth;after:spartanshields;after:lostcities;after:apexguns;after:crafttweaker";
+	public static final String DEPENDENCIES = "required-after:forge@[14.23.1.2611,);required-after:srparasites@[1.9.19,)";
 	public static final String RESOURCE_PREFIX = MOD_ID + ":"; // overlast:
 	
 	// Make an instance of the mod.
@@ -47,12 +51,6 @@ public class OverLast {
 	public void postInit(FMLPostInitializationEvent event) {
 		
 		proxy.postInit(event);
-	}
-
-	@EventHandler
-	public void serverStarting(FMLServerStartingEvent event) {
-
-		proxy.serverStarting(event);
 	}
 	
 	@EventHandler

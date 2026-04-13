@@ -18,18 +18,18 @@ public class StatBar {
 	// Texture
 	private ResourceLocation texture;
 	
-	// Full width and height  满屏的宽度和高度
+	// Full width and height  
 	private int fullWidth;
 	private int fullHeight;
 	
-	// Full width of the bar that actually MOVES. 实际移动进度条的全部宽度。
+	// Full width of the bar that actually MOVES.
 	private int defaultBarWidth;
 	
-	// Starting position of the moving bar in the texture file. 纹理文件中移动条的起始位置。
+	// Starting position of the moving bar in the texture file. 
 	private int movingTextureX;
 	private int movingTextureY;
 
-	// Values it holds (actual and max)  它持有的数值（实际和最大）。
+	// Values it holds (actual and max)  
     private float value = 0f;
     private float maxValue = 100f;
 	
@@ -98,29 +98,14 @@ public class StatBar {
 		
 		// Don't display most crap if debug mode is enabled.
 		if (!isDebugEnabled) {
-			
-
-			    if (type == StatType.SANITY && OverConfig.MECHANICS.enableSanity) {
-				
 				return true;
 			}
-
-
 			else if (type == StatType.EVOLUTION) {
-
 				return true;
 			}
-			
 			else {
-				
 				return false;
 			}
-		}
-		
-		else {
-			
-			return false;
-		}
 	}
 	
 	// Determine the width of the bar. 确定属性条的实际宽度。
@@ -146,15 +131,15 @@ public class StatBar {
 		String text;
 		
 		// String
-		    if (type == StatType.EVOLUTION) {
+		if (type == StatType.EVOLUTION) {
 
-				if(roundedValue>=10000000) {
-					text =String.format("%.2f",evoValue/1000000)+ "mP";
-				}else if(roundedValue>=100000) {
-		    		text =String.format("%.2f",evoValue/1000)+ "kP";
-				}else {
-					text = roundedValue + "P";
-				}
+			if(roundedValue>=10000000) {
+				text =String.format("%.2f",evoValue/1000000)+ "mP";
+			}else if(roundedValue>=100000) {
+				text =String.format("%.2f",evoValue/1000)+ "kP";
+			}else {
+				text = roundedValue + "P";
+			}
 		}
 
 		else {
