@@ -33,7 +33,7 @@ public class CapEvents {
 
 			// Capabilities
 			// Send data to client for rendering.
-			IMessage msgGui = new HUDRenderPacket.HUDRenderMessage(false,SRPSaveData.get(player.getEntityWorld()).getEvolutionPhase(player.getEntityWorld().provider.getDimension()),SRPSaveData.get(player.getEntityWorld()).getTotalKills(player.getEntityWorld().provider.getDimension()),false);
+			IMessage msgGui = new HUDRenderPacket.HUDRenderMessage(false,SRPSaveData.get(player.getEntityWorld(),0).getEvolutionPhase(player.getEntityWorld().provider.getDimension()),SRPSaveData.get(player.getEntityWorld(),0).getTotalKills(player.getEntityWorld().provider.getDimension()),false);
 			OverPackets.net.sendTo(msgGui, (EntityPlayerMP) player);
 
 		}
@@ -55,12 +55,12 @@ public class CapEvents {
 				boolean hideBool=true;
 				if(hideUI!=null) {
 					for (int level : hideUI) {
-						if(level== SRPSaveData.get(player.getEntityWorld()).getEvolutionPhase(player.getEntityWorld().provider.getDimension())) {
+						if(level== SRPSaveData.get(player.getEntityWorld(),0).getEvolutionPhase(player.getEntityWorld().provider.getDimension())) {
 							hideBool=false;
 						}
 					}
 				}
-                IMessage msgGui = new HUDRenderPacket.HUDRenderMessage(hideBool,SRPSaveData.get(player.getEntityWorld()).getEvolutionPhase(player.getEntityWorld().provider.getDimension()),SRPSaveData.get(player.getEntityWorld()).getTotalKills(player.getEntityWorld().provider.getDimension()),!OverConfig.MECHANICS.showRequestDirtyClock||(player.getItemStackFromSlot(EntityEquipmentSlot.MAINHAND).getItem() == SRPItems.itemEVClock || player.getItemStackFromSlot(EntityEquipmentSlot.OFFHAND).getItem() == SRPItems.itemEVClock));
+                IMessage msgGui = new HUDRenderPacket.HUDRenderMessage(hideBool,SRPSaveData.get(player.getEntityWorld(),0).getEvolutionPhase(player.getEntityWorld().provider.getDimension()),SRPSaveData.get(player.getEntityWorld(),0).getTotalKills(player.getEntityWorld().provider.getDimension()),!OverConfig.MECHANICS.showRequestDirtyClock||(player.getItemStackFromSlot(EntityEquipmentSlot.MAINHAND).getItem() == SRPItems.itemEVClock || player.getItemStackFromSlot(EntityEquipmentSlot.OFFHAND).getItem() == SRPItems.itemEVClock));
                 OverPackets.net.sendTo(msgGui, (EntityPlayerMP) player);
 			}
 		}
