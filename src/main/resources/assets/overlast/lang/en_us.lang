@@ -1,0 +1,421 @@
+itemGroup.overlast=Parasites Addon : OverLast
+
+#OverLast Item
+item.overlast.chocolate_smoothie.name=Chocolate Smoothie
+item.overlast.beef_pickaxe.name=Beef Pickaxe
+item.overlast.wooden_sword_plus.name=§6Wooden Sword +18
+item.overlast.wooden_sword_plus.tooltip=§6§owow!golden legendary!
+item.overlast.baseball_pole.name=§6Rod of Faith
+item.overlast.baseball_pole.tooltip=§7§oIf you get caught using a baseball bat again, you will repent in my room. -Pressel
+item.overlast.ice_spear.name=Ice Spear
+item.spartanshields:hero_shield.name=Hero's Shield
+item.spartanshields:hero_shield.tooltip=§a§oThe Anthem of man is the Anthem of courage
+item.overlast.pollute_bowl_herbal.name=Polluted Herbal
+item.overlast.bowl_herbal.name=Pure Herbal
+item.overlast.melon_ice.name=Melon Ice
+item.overlast.ice_sucker.name=Ice Sucker
+item.overlast.dumpling.name=Dumpling
+item.overlast.evo_device.name=Node Detector
+item.overlast.boss_chip.name=Origin Tentacle
+item.overlast.drinking_potion.name=Empty Potion Bottle
+item.overlast.drinking_potion_1.name=Parasites Purify Potion
+item.overlast.drinking_potion_2.name=Parasites Infect Potion
+item.overlast.drinking_potion_3.name=Advanced Parasites Infect Potion
+item.overlast.injected_potion.name=Injections
+item.overlast.drinking_potion.tooltip= sips
+item.overlast.drinking_potion.durability= durability
+item.overlast.drinking_potion.potion=Potion
+
+#Effect
+potion.effect.overlast:heat_radiation=Heat Radiation
+potion.effect.overlast:over_heating=Over Heating
+potion.effect.overlast:hypothermia=Hypothermia
+potion.effect.overlast:frosty=Frosty
+potion.effect.overlast:parasites_purify=Parasites Purify
+potion.effect.overlast:parasites_infect=Parasites Infect
+potion.effect.overlast:cool=Cool
+potion.effect.overlast:fortunate=Fortunate
+potion.effect.overlast:evil=Evil
+
+mob_effect.overlast:heat_radiation=Heat Radiation
+mob_effect.overlast:over_heating=Over Heating
+mob_effect.overlast:hypothermia=Hypothermia
+mob_effect.overlast:frosty=Frosty
+mob_effect.overlast:parasites_purify=Parasites Purify
+mob_effect.overlast:parasites_infect=Parasites Infect
+mob_effect.overlast:cool=Cool
+mob_effect.overlast:fortunate=Fortunate
+mob_effect.overlast:evil=Evil
+
+lingering_potion.effect.overlast:heat_radiation=Lingering Potion of Heat Radiation
+lingering_potion.effect.overlast:hypothermia=Lingering Potion of Hypothermia
+lingering_potion.effect.overlast:parasites_infect=Lingering Potion of Parasites Infect
+lingering_potion.effect.overlast:over_heating=Lingering Potion of Over Heating
+lingering_potion.effect.overlast:parasites_purify=Lingering Potion of Parasites Purify
+lingering_potion.effect.overlast:frosty=Lingering Potion of Frosty
+lingering_potion.effect.overlast:cool=Lingering Potion of Cool
+lingering_potion.effect.overlast:fortunate=Lingering Potion of Fortunate
+lingering_potion.effect.overlast:evil=Lingering Potion of Evil
+
+splash_potion.effect.overlast:heat_radiation=Splash Potion of Heat Radiation
+splash_potion.effect.overlast:hypothermia=Splash Potion of Hypothermia
+splash_potion.effect.overlast:parasites_infect=Splash Potion of Parasites Infect
+splash_potion.effect.overlast:over_heating=Splash Potion of Over Heating
+splash_potion.effect.overlast:parasites_purify=Splash Potion of Parasites Purify
+splash_potion.effect.overlast:frosty=Splash Potion of Frosty
+splash_potion.effect.overlast:cool=Splash Potion of Cool
+splash_potion.effect.overlast:fortunate=Splash Potion of Fortunate
+splash_potion.effect.overlast:evil=Splash Potion of Evil
+
+#Block
+tile.overlast.red_leaves.name=Red Leaves
+tile.overlast.yellow_leaves.name=Yellow Leaves
+tile.overlast.orange_leaves.name=Orange Leaves
+tile.overlast.blue_leaves.name=Winter Leaves
+tile.overlast.brown_leaves.name=Withered Leaves
+tile.overlast.blockpurifier.name=Block Purifier
+tile.overlast.winter_core.name=Winter Core
+tile.overlast.summer_core.name=Nether Core
+tile.overlast.specimen_farm.name=Agricultural Specimen
+tile.overlast.specimen_cell.name=Cellular Specimen
+tile.overlast.specimen_infect.name=Infected Specimen
+tile.overlast.final_specimen.name=World Purification Core
+tile.overlast.crops.name=Crops Box
+
+#Enchantment
+enchantment.overlast.srpkiller=Parasites Killer
+
+#Key
+key.overlast=OverLast KEYBind
+key.switchhud=Switch HUD
+
+#Message
+message.evopoint.login=The world phase is %d and the natural rate of evolution is %d P per minute.
+message.evopoint.eight=Eight phase...WHY human is still alive?
+message.evodevice.normal=The world has't detectable nodes,Please continue to be vigilant.
+message.evodevice.success=Warning, nodes have appeared in the world, please make sure to clear them as soon as possible. All node coordinates are (x, y, z, age):
+message.evodevice.fail=The node detector signal seems to be interfered,but why the machine has been damaged.
+
+message.lowsan.text0=§k They §l§r§d   L  O  V  E
+message.lowsan.text1=§k They §l§r§c Survive To Live
+message.lowsan.text2=§k They §l§r§f Is it a friend?
+message.lowsan.text3=§k They §l§r§0 We are Parasitic
+message.lowsan.text4=§k They §l§r§5 Help me!
+message.lowsan.text5=§k They §l§r§f Is the enemy approaching?
+message.lowsan.text6=§k They §l§r§f Wake up ! Escape to the safety zone
+message.lowsan.text7=§k They §l§r§f I know how much you wanna go home.
+message.lowsan.text8=§k They §l§r§8 with all I am
+message.lowsan.text9=§k They §f Parasitic Alive
+message.lowsan.respawn1=§k They §r§f May God be with you
+message.lowsan.respawn2=§k They §r§f Successfully contributed %d points to world evolution
+
+message.seasons.spring=Spring
+message.seasons.summer=Summer
+message.seasons.fall=Fall
+message.seasons.winter=Winter
+message.seasons.error=Error
+message.seasons.login=Current season is %s, day %d.
+message.seasons.forecast0=Good morning, Doom City! Today is a brand-new day. The current season is %s, day %d.
+message.seasons.forecast1=§7You feel an evil presence watching you...
+message.weather.noThunder=Rain today, take care to reduce going out, rain will start at %d and last %d.
+message.weather.isThunder=Thunderstorms today, take care to reduce going out, rain will start at %d and last %d.
+message.weather.sunny=Today is sunny , suitable for outdoor activities... Maybe.
+message.seasons.daily0=Wake dafaq up samora, we've gott a city to burn!
+message.seasons.daily1=howdy howdy Doom City, have you found some bugs on the ground? Don't worry about them threatening your food, because you may not need other food soon!
+message.seasons.daily2=Welcome to Radio Doom. See you at 8:00 every day. Radio Doom is waiting for your contact!
+message.seasons.daily3=Think the radio station is boring and want to change channels? Sorry, this is a compulsory program! just listen just listen(。・ω・。)
+message.seasons.daily4=Turn off the radio ? It can't be closed! Follow the electromagnetic wave and beg me to close!
+message.seasons.daily5=May this hot summer be over soon. May the endless wind and snow never stop, and may we live in this land for a long time until we go to the next planet. Cheers up!
+message.seasons.daily6=Unfortunately, the north camp was captured again, but luckily, they had an additional holy place to jump from buildings.
+message.seasons.daily7=According to reliable information, the Beckon farm is again active, and there is another infection area in the south.
+message.seasons.daily8=In the east parasites beasts with the Himuras of the abandoned building. Guess who won?
+message.seasons.daily9=Let's start a new day in the land of broken dreams ! So is anyone in touch? Radio Doom is always waiting for your contact!
+message.seasons.daily10=Some people say that the only thing that can't be lacking in the end of life is radio. What do you think? "I feel the same way!" Oh, thank you, so do I.
+message.seasons.daily11=Recently I have been dreaming that the earth is dyed blood red, the sky is covered by black fog, strange Beckons stand up, and ancient creatures wander in the sky.
+message.seasons.daily12=Has the radiation exceeded the standard? Can't the mouse be caught? Have cannibals been planted? None of these are problems! Contact the doom kitchen to give you the enjoyment before the end of the world! Now it also provides meal delivery service!
+message.seasons.daily13=My friends, have you ever cared what is in the endless sky on this land full of monsters? Is it endless loneliness or endless hope?
+message.seasons.daily14=Dear survivors, according to the latest information, please be alert to the partner who has been separated from you for more than a day. He may no longer be him.
+message.seasons.daily15=Load! aim! Kill with one blow! Monsters can make mistakes many times, but you can only make mistakes once!
+message.seasons.daily16=§k They §r§f life and growth in nature
+message.seasons.daily17=I don't know if you have time to sit down and listen to me talk about our great God... The Flying Spaghetti Monster! I'm so hungry!
+message.seasons.daily18=Five more minutes to sleep, five more minutes, five more minutes, five more minutes, five more minutes, five more minutes.
+message.seasons.daily19={carzy lanugh} Now, the whole world is on fire hahahaha...... {crazy laugh}
+
+message.seasons.dailySpring0=The weather is great, parasites are ready for a picnic.
+message.seasons.dailySpring1=Happy new year survivors, do you want a parasites combo? It's on sale now~
+message.seasons.dailySpring2=Winter has passed, it's time to get ready for the final battle!
+message.seasons.dailySpring3=Spring is here again, and it's time for animals to wake up from their hibernation. I mean, be careful with creatures from underground!
+message.seasons.dailySpring4=This is a special radio station for spring.
+message.seasons.dailySpring5=This is a special radio station for spring.
+message.seasons.dailySpring6=This is a special radio station for spring.
+
+message.seasons.dailySummer0=Great time for a BBQ party, isn't it?
+message.seasons.dailySummer1=Crazy hot outside, remember wear sunscreen when you go out.
+message.seasons.dailySummer2=This is a special radio station for summer.
+message.seasons.dailySummer3=This is a special radio station for summer.
+message.seasons.dailySummer4=This is a special radio station for summer.
+
+message.seasons.dailyFall0=It's autumn, wanna go out for a hunt paras.... I mean survivors?
+message.seasons.dailyFall1=Maple leaves are red now, guess what else is red?
+message.seasons.dailyFall2=This is a special radio station for fall.
+message.seasons.dailyFall3=This is a special radio station for fall.
+message.seasons.dailyFall4=This is a special radio station for fall.
+message.seasons.dailyFall5=This is a special radio station for fall.
+
+message.seasons.dailyWinter0=Yesterday was windy, today is snowy, I hope your funeral is not this cruel silver gray.
+message.seasons.dailyWinter1=Winter is also called the parasite season, but we are ready for those thing, right?
+message.seasons.dailyWinter2=This is a special radio station for winter.
+message.seasons.dailyWinter3=This is a special radio station for winter.
+message.seasons.dailyWinter4=This is a special radio station for winter.
+message.seasons.dailyWinter5=This is a special radio station for winter.
+message.seasons.dailyWinter6=This is a special radio station for winter.
+message.seasons.dailyWinter7=Mankind will prevail! Parasitic beasts can't defeat humans!
+
+message.seasons.dailyEnd0=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd1=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd2=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd3=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd4=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd5=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd6=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd7=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd8=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd9=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd10=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd11=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd12=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd13=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd14=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd15=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd16=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd17=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd18=This is a high evolution level text, originally designed for modpacks.
+message.seasons.dailyEnd19=This is a high evolution level text, originally designed for modpacks.
+
+message.finalBattle.prepare0=World purification core analyised successfully. The transmission channel is overlapped successfully.
+message.finalBattle.prepare1=World Purification structure identification failed. Please check if there are any obstacle blocks around it.
+message.finalBattle.prepare2=Missing purification core and samples and the transmisson channel cannot be overlapped.
+message.finalBattle.prepare3=structure complete, get ready survivors!
+
+message.finalBattle.repaired=Structure repaired successfully, good job!
+message.finalBattle.disrupted=Structure has been destroyed, please repair it as soon as possible!
+
+message.finalBattle.timing1=Current waves : %d/%d, next wave arrives with %d seconds
+message.finalBattle.timing2=Current waves : %d/%d, %d seconds to end.
+
+message.finalBattle.start0=This is the opening of the final Battle.
+message.finalBattle.start1=This is the opening of the final Battle.
+message.finalBattle.start2=This is the opening of the final Battle.
+message.finalBattle.start3=This is the opening of the final Battle.
+message.finalBattle.start4=This is the opening of the final Battle.
+message.finalBattle.start5=This is the opening of the final Battle.
+message.finalBattle.start6=This is the opening of the final Battle.
+message.finalBattle.start7=This is the opening of the final Battle.
+message.finalBattle.start8=This is the opening of the final Battle.
+message.finalBattle.start9=This is the opening of the final Battle.
+message.finalBattle.start10=This is the opening of the final Battle.
+
+message.finalBattle.report1=This is the report of the final Battle.
+message.finalBattle.report2=Basic difficulty: %d Modified difficulty: %d Final difficulty: %d
+message.finalBattle.report3=This is the report of the final Battle.
+message.finalBattle.report4=Total score:%d
+message.finalBattle.report5=This is the report of the final Battle.
+message.finalBattle.report6=This is the report of the final Battle.
+message.finalBattle.report7=This is the report of the final Battle.
+
+message.finalBattle.initWave1=This is the text that appears in the prue.
+message.finalBattle.initWave2=This is the text that appears in the ancient.
+message.finalBattle.initWave3=This is the text that appears in the adapted.
+message.finalBattle.initWave4=This is the text that appears in the assimilated.
+
+message.finalBattle.death0=This is the text of the player's death.
+message.finalBattle.death1=This is the text of the player's death.
+message.finalBattle.death2=This is the text of the player's death.
+message.finalBattle.death3=This is the text of the player's death.
+message.finalBattle.death4=This is the text of the player's death.
+message.finalBattle.death5=This is the text of the player's death.
+message.finalBattle.death6=This is the text of the player's death.
+message.finalBattle.death7=This is the text of the player's death.
+message.finalBattle.death8=This is the text of the player's death.
+message.finalBattle.death9=This is the text of the player's death.
+
+message.finalBattle.rankOne0=This is the text of the first wave.
+message.finalBattle.rankOne1=This is the text of the first wave.
+message.finalBattle.rankOne2=This is the text of the first wave.
+message.finalBattle.rankOne3=This is the text of the first wave.
+message.finalBattle.rankOne4=This is the text of the first wave.
+
+message.finalBattle.rankTwo0=This is the text of the second wave.
+message.finalBattle.rankTwo1=This is the text of the second wave.
+message.finalBattle.rankTwo2=This is the text of the second wave.
+message.finalBattle.rankTwo3=This is the text of the second wave.
+message.finalBattle.rankTwo4=This is the text of the second wave.
+message.finalBattle.rankTwo5=This is the text of the second wave.
+message.finalBattle.rankTwo6=This is the text of the second wave.
+message.finalBattle.rankTwo7=This is the text of the second wave.
+message.finalBattle.rankTwo8=This is the text of the second wave.
+message.finalBattle.rankTwo9=This is the text of the second wave.
+message.finalBattle.rankTwo10=This is the text of the second wave.
+message.finalBattle.rankTwo11=This is the text of the second wave.
+message.finalBattle.rankTwo12=This is the text of the second wave.
+message.finalBattle.rankTwo13=This is the text of the second wave.
+message.finalBattle.rankTwo14=This is the text of the second wave.
+message.finalBattle.rankTwo15=This is the text of the second wave.And launch a satellite attack.
+
+message.finalBattle.rankThree0=This is the text of the third wave.
+message.finalBattle.rankThree1=This is the text of the third wave.
+message.finalBattle.rankThree2=This is the text of the third wave.
+
+message.finalBattle.rankFour0=This is the text of the fourth wave.
+message.finalBattle.rankFour1=This is the text of the fourth wave.
+message.finalBattle.rankFour2=This is the text of the fourth wave.
+message.finalBattle.rankFour3=This is the text of the fourth wave.
+
+message.finalBattle.end0=This is the text of the human battle victory, using the plot of Halo.
+message.finalBattle.end1=This is the text of the human battle victory, using the plot of Halo.
+message.finalBattle.end2=This is the text of the human battle victory, using the plot of Halo.
+message.finalBattle.end3=This is the text of the human battle victory, using the plot of Halo.
+message.finalBattle.end4=This is the text of the human battle victory, using the plot of Halo.
+message.finalBattle.end5=This is the text of the human battle victory, using the plot of Halo.
+message.finalBattle.end6=This is the text of the human battle victory, using the plot of Halo.
+message.finalBattle.end7=This is the text of the human battle victory, using the plot of Halo.
+message.finalBattle.end8=This is the text of the human battle victory, using the plot of Halo.
+message.finalBattle.end9=This is the text of the human battle victory, using the plot of Halo.
+message.finalBattle.end10=This is the text of the human battle victory, using the plot of Halo.
+message.finalBattle.end11=§cEND
+message.finalBattle.end12-0=§e===========================
+message.finalBattle.end12-1=§bAuthor:Acherlins §dArtist:Elflia,Anihero,Kitakamippko
+message.finalBattle.end12-2=§aSpecial Thanks: [Here you can fill in fans or modpacks authors,etc.]
+message.finalBattle.end12-3=Tribute:[Here you can write in tribute to other works or meme]
+message.finalBattle.end12-4=§fCredits by Well Sleeping Committee.
+message.finalBattle.end12-5=§e===========================
+message.finalBattle.end12=§cEND
+message.finalBattle.end13=This radio youtuber's text.
+message.finalBattle.end14=This radio youtuber's text.
+message.finalBattle.end15=This radio youtuber's text.
+message.finalBattle.end16=This radio youtuber's text.
+message.finalBattle.end17=This radio youtuber's text.
+message.finalBattle.end18=This radio youtuber's text.
+message.finalBattle.end19=This radio youtuber's text.
+message.finalBattle.end20=This radio youtuber's text.
+message.finalBattle.end21=This radio youtuber's text.
+message.finalBattle.end22=This is the ending text.
+
+message.finalBattle.bad0=This is the bad ending text.
+message.finalBattle.bad1=This is the bad ending text.
+message.finalBattle.bad2=This is the bad ending text.
+message.finalBattle.bad3=This is the bad ending text.
+message.finalBattle.bad4=This is the bad ending text.
+message.finalBattle.bad5=This is the bad ending text.
+message.finalBattle.bad6=This is the bad ending text.
+message.finalBattle.bad7=This is the bad ending text.
+message.finalBattle.bad8=This is the bad ending text.
+message.finalBattle.bad9=This is the bad ending text.
+message.finalBattle.bad10=This is the ending text.
+
+message.summer_core_block.active=Nether Core Activated!
+
+
+#Config
+overlast.client=Client
+overlast.client.tooltip=Client-Only Settings
+config.overlast:client.barPos=Position of Bars?
+config.overlast:client.barPos.tooltip=Specify where to place the GUI bars. You can set it to any of the following: \ntop left \ntop right \nmiddle left \nmiddle right \nbottom left \nbottom right \nInclude the space. If you mess up, it'll default to middle right.
+config.overlast:client.enableSound=Enable Sound
+config.overlast:client.enableSound.tooltip=Whether to enable low sanity sound effects,may conflict with other mods.
+config.overlast:client.enableEffect=Enable Effect
+config.overlast:client.enableEffect.tooltip=Whether to enable low sanity visual effects,may conflict with other mods.
+config.overlast:client.Xoffset=UI Bar Horizontal Offset
+config.overlast:client.Xoffset.tooltip=When set to greater than 0, the UI bar will be offset to the right, \nand when set to less than 0, the UI bar will be offset to the left.
+config.overlast:client.Yoffset=UI Bar Vertical Offset
+config.overlast:client.Yoffset.tooltip=When set to greater than 0, the UI bar will be offset to the bottom, \n and when set to less than 0, the UI bar will be offset to the top.
+
+overlast.mechanics=Mechanics
+overlast.mechanics.tooltip=Settings with the main player mechanics
+config.overlast:mechanics.showRequestDirtyClock=Toggle evolution bar display mechanism
+config.overlast:mechanics.showRequestDirtyClock.tooltip=If set to true, the natural evolution bar will only be displayed when holding a dirty clock.
+config.overlast:mechanics.enableDailyBOSS=Daily BOSS?
+config.overlast:mechanics.enableDailyBOSS.tooltip=Whether to summon the daily boss during the high evolution phase.
+config.overlast:mechanics.enableSanity=Sanity?
+config.overlast:mechanics.enableSanity.tooltip=Whether to enable the sanity mechanic.
+config.overlast:mechanics.enableLightEffect=LightEffect?
+config.overlast:mechanics.enableLightEffect.tooltip=Whether brightness effects sanity.
+config.overlast:mechanics.sanityScale=Sanity Rate
+config.overlast:mechanics.sanityScale.tooltip=The rate of Sanity change, both increasing and decreasing.
+config.overlast:mechanics.naturalEvolutionScale=Natural Evolution Rate
+config.overlast:mechanics.naturalEvolutionScale.tooltip=Evolution phase 3 or above will enable the natural evolution, \nthe higher the speed of the faster. Set to 0 for it to never occur.
+config.overlast:mechanics.enableTemperature=Enable Temperature?
+config.overlast:mechanics.enableTemperature.tooltip=Whether to enable the temperature mechanic. \nEffective only in summer and winter.
+config.overlast:mechanics.temperatureScale=Temperature Rate
+config.overlast:mechanics.temperatureScale.tooltip=The rate at which a player heats up and cools down.
+config.overlast:mechanics.enableCourage=Enable Courage?
+config.overlast:mechanics.enableCourage.tooltip=Whether to enable the courage mechanic.
+config.overlast:mechanics.courageScale=Courage Rate
+config.overlast:mechanics.courageScale.tooltip=The rate of courage change, both increasing and decreasing.
+config.overlast:mechanics.enableParasitic=Enable Parasitic?
+config.overlast:mechanics.enableParasitic.tooltip=Whether to enable the parasitic mechanic.
+config.overlast:mechanics.parasiticScale=Parasitic Rate
+config.overlast:mechanics.parasiticScale.tooltip=The rate of parasitic change, both increasing and decreasing.
+config.overlast:mechanics.enableRadio=Enable Radio?
+config.overlast:mechanics.enableRadio.tooltip=For the features provided by the modpacks, the modpacks author is able to customize the radio text through the resource pack.
+
+overlast.seasons=Seasons
+config.overlast:seasons.enableSeasons=Enable Seasons?
+config.overlast:seasons.enableSeasons.tooltip=Whether to enable the Seasons, will affect the ambient temperature and leaf color.
+config.overlast:seasons.winterLength=Length of Winter
+config.overlast:seasons.winterLength.tooltip=Length of winter, during which most biome will snow and crops will stop growing. \nSet to 0 for it to never occur.
+config.overlast:seasons.springLength=Length of Spring
+config.overlast:seasons.springLength.tooltip=Length of winter, color of the leaves will recover in the spring. \nSet to 0 for it to never occur.
+config.overlast:seasons.summerLength=Length of Summer
+config.overlast:seasons.summerLength.tooltip=Length of summer, when most biome become hot. \nSet to 0 for it to never occur.
+config.overlast:seasons.autumnLength=Length of Autumn
+config.overlast:seasons.autumnLength.tooltip=Length of autumn, in which the leaves change color. \nSet to 0 for it to never occur.
+config.overlast:seasons.defaultSeason=Default Season
+config.overlast:seasons.defaultSeason.tooltip=Season when you first enter the game.WINTER: 1;SPRING:  2;SUMMER: 3;AUTUMN: 4;default: 0;
+config.overlast:seasons.enableSummerParasiteEffect=enableSummerParasitesEffect
+config.overlast:seasons.enableSummerParasiteEffect.tooltip=Whether to enable the Summer ParasiteEffect, will affect the Parasites spontaneous combustion.
+config.overlast:seasons.enableSummerPlayerEffect=enableSummerPlayerEffect
+config.overlast:seasons.enableSummerPlayerEffect.tooltip=Whether to enable the Summer PlayerEffect, will affect the Player spontaneous combustion.
+config.overlast:seasons.enableWinterParasiteEffect=enableWinterParasitesEffect
+config.overlast:seasons.enableWinterParasiteEffect.tooltip=Whether to enable the Winter ParasiteEffect, will affect the Parasites speed and strength.
+config.overlast:seasons.enableWinterPlayerEffect=enableWinterPlayerEffect
+config.overlast:seasons.enableWinterPlayerEffect.tooltip=Whether to enable the Winter PlayerEffect, will affect the Player sanity and natural evolution rate.
+
+overlast.custom=Custom
+overlast.custom.tooltip=Custom Mechanics
+config.overlast:custom.enableAutoFoodSan=Auto configuration Food Sanity
+config.overlast:custom.enableAutoFoodSan.tooltip=Whether to enable automatic configuration of food Sanity.(Being lazy)
+config.overlast:custom.foodSanity=Food Sanity
+config.overlast:custom.foodSanity.tooltip=Customize the sanity value provided by the food.(eg: minecraft:apple;10)
+config.overlast:custom.hideUI=Hide Evolution UI
+config.overlast:custom.hideUI.tooltip=Hide the evolution bar of the specified phase. (eg: -1,0,3)
+config.overlast:custom.specimenFarm=Agricultural Specimen Recipe
+config.overlast:custom.specimenFarm.tooltip=Crafting in the Workbench.(eg: minecraft:id;amount;meta)
+config.overlast:custom.specimenCell=Cellular Specimen Recipe
+config.overlast:custom.specimenCell.tooltip=Crafting in the Workbench.(eg: minecraft:id;amount;meta)
+config.overlast:custom.specimenInfect=Infected Specimen Recipe
+config.overlast:custom.specimenInfect.tooltip=Crafting in the Workbench.(eg: minecraft:id;amount;meta)
+config.overlast:custom.finalSpecimen=World Purification Core Recipe
+config.overlast:custom.finalSpecimen.tooltip=Crafting in the Workbench.(eg: minecraft:id;amount;meta)
+config.overlast:custom.finalBattleDim=Final Battle Dimension ID
+config.overlast:custom.finalBattleDim.tooltip=Final battle dimension ID. (eg: 0)
+config.overlast:custom.SRPEnchantType=SRP Enchant Type
+config.overlast:custom.SRPEnchantType.tooltip=SRP Killer applicable item types 0-ALL 1-WEAPON 2-FISHING_ROD 3-BOW (eg: 1)
+config.overlast:custom.SRPEnchantRarity=SR PEnchant Rarity
+config.overlast:custom.SRPEnchantRarity.tooltip=Rarity of the SRP Killer. 0-COMMON 1-UNCOMMON 2-RARE 3-VERY_RARE(eg: 3)
+config.overlast:custom.SRPEnchantBaseDamage=SRP Enchant BaseDamage
+config.overlast:custom.SRPEnchantBaseDamage.tooltip=SRP Killer of the Damage. The default damage is 1.25 + 0.75 * level (eg: 0.75f)
+config.overlast:custom.lowSanityPools=Low Sanity Pools
+config.overlast:custom.lowSanityPools.tooltip=Low sanity spawn entity pools (eg: minecraft:id;phase;rate)
+config.overlast:custom.lowSanityPotion=LowSanityPotion
+config.overlast:custom.lowSanityPotion.tooltip=Effects of potions given to low sanity. (eg: minecraft:id;duration;amplifier)
+config.overlast:custom.lowSanityParasites=LowSanityParasites
+config.overlast:custom.lowSanityParasites.tooltip=Effects of potions given to low sanity under ParasitesInfection status. (eg: minecraft:id;duration;amplifier;parasites)
+config.overlast:custom.sanityDimBlacklist=SanityDimBlacklist
+config.overlast:custom.sanityDimBlacklist.tooltip=Sanity will not change with brightness in the following dimension. (eg: 1,-1)
+config.overlast:custom.finalBattleRewards=FinalBattleRewards
+config.overlast:custom.finalBattleRewards.tooltip=The victory reward items for the final battle.(eg: minecraft:id;amount;meta)
+
+
+#command line
+commands.overlast.usage=Commands usage

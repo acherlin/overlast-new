@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "overlast:blocks/winter_core",
+    "down": "overlast:blocks/winter_core",
+    "up": "overlast:blocks/winter_core",
+    "east": "overlast:blocks/winter_core",
+    "west": "overlast:blocks/winter_core",
+    "north": "overlast:blocks/winter_core",
+    "south": "overlast:blocks/winter_core"
+  }
+}

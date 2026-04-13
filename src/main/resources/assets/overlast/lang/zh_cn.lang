@@ -1,0 +1,419 @@
+itemGroup.overlast=寄生兽末世扩展
+
+#Overlast Item
+item.overlast.chocolate_smoothie.name=巧克力沙冰
+item.overlast.beef_pickaxe.name=牛肉镐
+item.overlast.wooden_sword_plus.name=§6木剑+18
+item.overlast.wooden_sword_plus.tooltip=§6§o金色传说
+item.overlast.baseball_pole.name=§6送你见上帝
+item.overlast.baseball_pole.tooltip=§7§o要是再被我发现拿它去打棒球,就让你到我的房间去忏悔!
+item.overlast.ice_spear.name=冰棍
+item.spartanshields:hero_shield.name=勇者之盾
+item.spartanshields:hero_shield.tooltip=§a§o人类的赞歌，即是勇气的赞歌!
+item.overlast.pollute_bowl_herbal.name=寄源草药
+item.overlast.bowl_herbal.name=净化草药
+item.overlast.melon_ice.name=西瓜棒冰
+item.overlast.ice_sucker.name=印度手搓小冰棍
+item.overlast.dumpling.name=饺子
+item.overlast.evo_device.name=节点探测器
+item.overlast.boss_chip.name=本源触须
+item.overlast.drinking_potion.name=空药水瓶
+item.overlast.drinking_potion_1.name=饮用型寄生净化药水
+item.overlast.drinking_potion_2.name=饮用型寄生感染药水
+item.overlast.drinking_potion_3.name=浓缩型寄生感染药水
+item.overlast.injected_potion.name=注射型针剂
+item.overlast.drinking_potion.tooltip= 剩余可饮用次数
+item.overlast.drinking_potion.durability= 耐久
+item.overlast.drinking_potion.potion=药水瓶
+
+#Effect
+potion.effect.overlast:heat_radiation=高热辐射
+potion.effect.overlast:over_heating=过热
+potion.effect.overlast:hypothermia=寒潮侵袭
+potion.effect.overlast:frosty=冻结
+potion.effect.overlast:parasites_purify=寄群净化
+potion.effect.overlast:parasites_infect=寄群感染
+potion.effect.overlast:cool=透心凉
+potion.effect.overlast:fortunate=福运
+potion.effect.overlast:evil=亡灵化
+
+mob_effect.overlast:heat_radiation=高热辐射
+mob_effect.overlast:over_heating=过热
+mob_effect.overlast:hypothermia=寒潮侵袭
+mob_effect.overlast:frosty=冻结
+mob_effect.overlast:parasites_purify=寄群净化
+mob_effect.overlast:parasites_infect=寄群感染
+mob_effect.overlast:cool=透心凉
+mob_effect.overlast:fortunate=福运
+mob_effect.overlast:evil=亡灵化
+
+lingering_potion.effect.overlast:heat_radiation=滞留型高热辐射药水
+lingering_potion.effect.overlast:hypothermia=滞留型寒潮侵袭药水
+lingering_potion.effect.overlast:parasites_infect=滞留型寄群感染药水
+lingering_potion.effect.overlast:over_heating=滞留型过热药水
+lingering_potion.effect.overlast:parasites_purify=滞留型净化药水
+lingering_potion.effect.overlast:frosty=滞留型冻结药水
+lingering_potion.effect.overlast:cool=滞留型透心凉药水
+lingering_potion.effect.overlast:fortunate=滞留型福气药水
+lingering_potion.effect.overlast:evil=滞留型亡灵化药水
+
+splash_potion.effect.overlast:heat_radiation=喷溅型高热辐射药水
+splash_potion.effect.overlast:hypothermia=喷溅型寒潮侵袭药水
+splash_potion.effect.overlast:parasites_infect=喷溅型寄群感染药水
+splash_potion.effect.overlast:over_heating=喷溅型过热药水
+splash_potion.effect.overlast:parasites_purify=喷溅型净化药水
+splash_potion.effect.overlast:frosty=喷溅型冻结药水
+splash_potion.effect.overlast:cool=喷溅型透心凉药水
+splash_potion.effect.overlast:fortunate=喷溅型福气药水
+splash_potion.effect.overlast:evil=喷溅型亡灵化药水
+
+#Block
+tile.overlast.red_leaves.name=红色树叶
+tile.overlast.yellow_leaves.name=黄色树叶
+tile.overlast.orange_leaves.name=橙色树叶
+tile.overlast.blue_leaves.name=冰洁树叶
+tile.overlast.brown_leaves.name=枯萎树叶
+tile.overlast.blockpurifier.name=方块净化器
+tile.overlast.winter_core.name=永冻核心
+tile.overlast.summer_core.name=下界核心
+tile.overlast.specimen_farm.name=样本方块（农业）
+tile.overlast.specimen_cell.name=样本方块（细胞）
+tile.overlast.specimen_infect.name=样本方块（感染）
+tile.overlast.final_specimen.name=世界净化核心
+tile.overlast.crops.name=作物桶
+
+#Enchantment
+enchantment.overlast.srpkiller=寄灵驱散
+
+#key
+key.overlast=末世生存扩展键位设定
+key.switchhud=切换HUD显示状态
+
+#Message
+message.evopoint.login=当前世界等级为 %d ，自然演化速度为 %d P每分
+message.evopoint.eight=都八级了，人类怎么还没Bad Ending啊~
+message.evodevice.normal=当前世界可探测范围内尚无节点,以防万一，保持警惕。
+message.evodevice.success=警告，可探测范围出现节点，请务必尽快清除！所有节点坐标为 (x, y, z, age):
+message.evodevice.fail=节点探测器受到干扰，自检失败，探测器已损坏。
+
+message.lowsan.text0=§k They §l§r§d   L  O  V  E
+message.lowsan.text1=§k They §l§r§c 活 下 去
+message.lowsan.text2=§k They §l§r§f 是同伴吗
+message.lowsan.text3=§k They §l§r§0 寄生同源
+message.lowsan.text4=§k They §l§r§5 帮 帮 我
+message.lowsan.text5=§k They §l§r§f 是敌人在靠近吗
+message.lowsan.text6=§k They §l§r§f 醒醒，快逃离到安全区
+message.lowsan.text7=§k They §l§r§f 好想回家
+message.lowsan.text8=§k They §l§r§8 献上一切
+message.lowsan.text9=§k They §f 寄生永生
+message.lowsan.respawn1=§k They §r§f 我等与你同在
+message.lowsan.respawn2=§k They §r§f 成功为世界演化贡献 %d 点
+
+message.seasons.spring=春季
+message.seasons.summer=夏季
+message.seasons.fall=秋季
+message.seasons.winter=冬季
+message.seasons.error=错误
+message.seasons.login=当前季节为%s，第%d天
+message.seasons.forecast0=早上好，末日城，今天又是崭新的一天。当前季节为%s，第%d天
+message.seasons.forecast1=§7你感到一个邪恶的存在正注视着你......
+message.weather.noThunder=今日有雨，注意减少外出，降雨将在%d时开始，持续%d时。
+message.weather.isThunder=今日有雷暴，注意减少外出，降雨将在%d时开始，持续%d时。
+message.weather.sunny=今日天气良好，适合户外工作...可能它们也这么觉得
+message.seasons.daily0=Wake dafaq up samurai, we've gott a city to burn!
+message.seasons.daily1=嘿观众朋友们！有没有在地上发现一些小虫子啊？不要担心它们威胁你的粮食，因为说不定你很快就不需要粮食啦！
+message.seasons.daily2=欢迎收听末世电台，每天八点，不见不散。末世电台等待您的联络！
+message.seasons.daily3=觉得电台无聊想要换台？对不起啦，这是强制收听节目啦！你听听嘛！你听听嘛！你听听嘛！
+message.seasons.daily4=关掉电台？...这个关不掉的！顺着电磁波来求我关啊！
+message.seasons.daily5=愿这炎炎夏日早日过去。愿这无边风雪永不停息，愿我们长久生存于这片大地，直到我们前往下一颗星球。干杯！
+message.seasons.daily6=不幸的消息，北边营地再次被攻占，但幸运的是，他们多了一个跳楼圣地。
+message.seasons.daily7=据可靠消息，魔神柱教再次活动，南方又新增了一个感染区
+message.seasons.daily8=东边的寄生兽和废弃高楼的剑心打起来啦，你猜猜谁赢了？
+message.seasons.daily9=大家和我一起，开始这碎梦之地新的一天吧！所以有人联络吗？末世电台永远等待您的联络！
+message.seasons.daily10=有人说末世唯一不能缺的就是电台，你觉得呢？“我也这么觉得！”哦，谢谢朋友，我也是。
+message.seasons.daily11=最近，一直在做一个梦，大地被染得血红，天幕被黑雾遮蔽，异样的寄生柱矗立，古老的生物在天空游荡。
+message.seasons.daily12=辐射超标了吗？老鼠捉不到了吗？种出食人花了吗？这一切都不是问题！联系末世厨房，给你末世前的享受！现在还提供送餐服务哦！
+message.seasons.daily13=朋友们，你们是否在意过，在这遍地都是怪物的大地之上，那无尽的天空之中有着什么，是无边的寂寞还是无尽的希望。
+message.seasons.daily14=各位幸存者们，根据最新情报，请警惕与你分离超过一天的伙伴，他可能已经是不再是他了。
+message.seasons.daily15=上膛！瞄准！一击毙命！怪物可以失误好多次，你只能失误一次！
+message.seasons.daily16=§k They §r§f 生生不息
+message.seasons.daily17=不知道你是否有时间坐下来听我聊聊，关于我们伟大的神......飞天意面神！好饿！
+message.seasons.daily18=再睡五分钟，再睡五分钟，再睡五分钟，再睡五分钟，再睡五分钟，再睡五分钟
+message.seasons.daily19=哈！哈哈！哈哈哈！他疯了！她也疯了！这世界全tm疯了！
+
+message.seasons.dailySpring0=最近气温适宜，正是寄生兽回老家过年的好时机嚯嚯嚯
+message.seasons.dailySpring1=祝还活着的各位幸存者新春快乐，新年特价寄生兽组合包好评发售中~
+message.seasons.dailySpring2=冰雪融化，最艰难的时期已经过去了，发起决战准备！它们也是这么想的~
+message.seasons.dailySpring3=春天来了，又到了万物复苏的时候，我是说，小心地下！
+message.seasons.dailySpring4=春季觅食包绝赞发售中！野葱树莓蒲公英点击就送！快联系末世电台订购吧~
+message.seasons.dailySpring5=春眠不觉晓，裂兽嘎嘎叫！我真是大诗人~
+message.seasons.dailySpring6=粮食，军火，利用好没感染的土地，种植下每个希望。
+
+message.seasons.dailySummer0=最新饮品芒菠椰椰超人气贩售中！现已加入木筏漂流套餐！
+message.seasons.dailySummer1=今天是烤肉的好天气，只需要你扔下手中的伞！
+message.seasons.dailySummer2=小心别变成kfc全家桶，末世配送费可不是一般的高。
+message.seasons.dailySummer3=烤串！烤串！新鲜的寄生虫触须烤串！一块钱四个！末世厨房已和末世电台达成合作，联系末世电台订购吧！
+message.seasons.dailySummer4=某个幸存者营地举办了夏日庙会，西瓜棒冰万岁！我也想去搞点！
+
+message.seasons.dailyFall0=据报道今年的收成不错，你也想去喂寄生虫？
+message.seasons.dailyFall1=昨天秋叶祭圆满结束！下次可以联络末世电台提供技术支持，让我也参一脚！
+message.seasons.dailyFall2=秋季到了？该狩猎肥羊们了！
+message.seasons.dailyFall3=凌冬将至，家里的屯粮还够吗
+message.seasons.dailyFall4=夏天夏天悄悄过去留下小秘密，藏地底藏地底不能告诉你
+message.seasons.dailyFall5=哈哈哈，有人那边的树叶都红了，连楼房一起红了
+
+message.seasons.dailyWinter0=是久违的冬季，末世最恐怖的季节是冬季！今年又得喂饱多少只寄生虫哈哈哈
+message.seasons.dailyWinter1=昨日中心区举办了冬泳活动，见鬼，游泳池里全是岩浆
+message.seasons.dailyWinter2=昨夜大风，今日大雪，希望你的葬礼不是这残忍的银灰色。
+message.seasons.dailyWinter3=银装素裹，万物冻结，一切都慢——下——来——了——
+message.seasons.dailyWinter4=铃声已至，风雪缠足
+message.seasons.dailyWinter5=注意请不要在地表与寄生种作战，重复，请不要在地表与寄生种作战。地底？地底也不要！
+message.seasons.dailyWinter6=忽如一夜春风来，千树万树梨花开
+message.seasons.dailyWinter7=人类必胜！寄生兽是无法战胜人类的！
+
+message.seasons.dailyEnd0=最艰难的阶段已经过去了，人类必胜！
+message.seasons.dailyEnd1=我好像已经习惯这遮蔽天日的黑雾和浸染大地的红土了，毕竟也看了这么多次，别有一番风味不是么？
+message.seasons.dailyEnd2=节点刚开始扩散的时候是灾难，现在则是希望，唯有本源才能救世。找到它！
+message.seasons.dailyEnd3=我已经看不到希望了，观众朋友们，我爱你们。
+message.seasons.dailyEnd4=被打啦，撤退啦，带着我的电台一起跑啦！末世电台永远接收联络！
+message.seasons.dailyEnd5=早安 1 2 4 5 8 §k They §r§f 虽然信号不好，但发布播报看来还是可以做到的
+message.seasons.dailyEnd6=好消 朋 们，收到了唯一能净 世界的方法，情报说取得样 吧。听得 嘛？
+message.seasons.dailyEnd7=信号修复。听着朋友们，收集好能收集的一切物资，制作样本，保持联络。
+message.seasons.dailyEnd8=被寄生的世界，失落的文明，残留的科技，顽强的生灵，无尽的亡魂。从里面发掘宝藏吧。
+message.seasons.dailyEnd9=节点探测器信道似乎已经坏掉了，滴滴，砸一砸可能会好。或者联络末世电台获得专业技术支持！
+message.seasons.dailyEnd10=多吃点饺子和南瓜派吧，这该死的世界，只有幸福和甜度能让人维持理智了。看看那无尽的天，多么......哦，忘了你们看不到了。
+message.seasons.dailyEnd11=世界已经足够疯狂了，因此理智不再是必需品了，来接触一下低理智的世界吧。
+message.seasons.dailyEnd12=夏季寄生兽地表的寄生兽会燃烧，冬季海平面上的寄生兽会变得疯狂。
+message.seasons.dailyEnd13=说实话，朋友们，我也不知道我现在究竟是为了什么还要继续道个早安，希望能听到这句早上好的人今晚不要在寄生虫的肚子里睡下去吧
+message.seasons.dailyEnd14=你说他们真的能活着回来吗？......不，就当我什么都没说吧。
+message.seasons.dailyEnd15=每个凌晨，来自亘古的存在都有可能苏醒。而我，也会苏醒，哈哈！
+message.seasons.dailyEnd16=地狱空荡荡，恶魔在人间。那天上有什么？
+message.seasons.dailyEnd17=我爱这世界，我只能这样告诉我自己,哪怕现在它只能说是一团糟,即使这样一团糟，我也得工作！你们也得工作！记住样本！
+message.seasons.dailyEnd18=收手吧，外面都是成......成片的尸山血海。这次难道......
+message.seasons.dailyEnd19=你好。......是这么说的吗？对不起，我还不太擅长讲人类的语言......早上好？
+
+message.finalBattle.prepare0=世界净化核心解析成功。传统通道搭接成功。
+message.finalBattle.prepare1=世界净化结构识别失败，请检查是否周围存在障碍方块。
+message.finalBattle.prepare2=缺少净化核心。样本缺失，无法搭接。
+message.finalBattle.prepare3=已经不需要再努力啦，万岁！
+
+message.finalBattle.repaired=识别区域已经修复，干得好！
+message.finalBattle.disrupted=识别区域被破坏，传输中止，请尽快修复！
+
+message.finalBattle.timing1=当前决战波数：%d/%d，下一波到来还剩%d秒
+message.finalBattle.timing2=当前决战波数：%d/%d，距离结束还剩%d秒
+
+message.finalBattle.start0=样本连接成功。信标对接成功，传输即将开始。
+message.finalBattle.start1=样本识别成功，激活者基因特征识别失......成功。条件达成。允许激活天幕。“最终决战”计划开启。
+message.finalBattle.start2=通告幸存的人类......吱吱......嘿！听众朋友们大家好！末世电台收到了您的联络！不要多问！要开打了！
+message.finalBattle.start3=请幸存者们迅速集合至X:%d Y:%d Z:%d，进入黑曜石与原石组成的识别区域内，寄生虫即将发起总攻！
+message.finalBattle.start4=在识别区域内坚持20分钟，维持传输！如果场地被破坏，修好它才能继续传输！
+message.finalBattle.start5=靠近信标能够暂时抵抗寄生兽带来的亡灵化状态，但不要让它们破坏传输，这场战争可不能再来！
+message.finalBattle.start6=§l成败在此一举，夺回世界就靠你们了！记住，机会只有一次，无法重来！
+message.finalBattle.start7=§e只要找对角度，他们就会像黄油一样被切开。
+message.finalBattle.start8=§d等我回家，亲爱的。
+message.finalBattle.start9=§7已经，没有什么好害怕的了。
+message.finalBattle.start10=§c人类必胜！
+
+message.finalBattle.report1=[天幕]难度评估报告正在生成中......
+message.finalBattle.report2=基础难度：%d 修正难度：%d 最终难度：%d
+message.finalBattle.report3=[天幕]结局条件检测
+message.finalBattle.report4=剩余点数：%d
+message.finalBattle.report5=弥留的恐惧污染了你的灵魂...
+message.finalBattle.report6=人类...最终还是抛弃了我们吗
+message.finalBattle.report7=§e[达成这个结局说明小队成员配合非常完善，即使再强大的寄生兽也没有彻底摧毁人类的勇气！]
+
+message.finalBattle.initWave1=纯种之怒，卓越为路！
+message.finalBattle.initWave2=始祖降临，血溅千里！
+message.finalBattle.initWave3=适应之种，重铸荣光！
+message.finalBattle.initWave4=同化寄群，负隅顽抗！
+
+message.finalBattle.death0=死战到底！
+message.finalBattle.death1=呃呃。
+message.finalBattle.death2=寄!
+message.finalBattle.death3=只能..到这里了。
+message.finalBattle.death4=tnnd...不许撤退！
+message.finalBattle.death5=让我回去！让我回去！！
+message.finalBattle.death6=快...快给我...止血...
+message.finalBattle.death7=活下去啊你这个混蛋！
+message.finalBattle.death8=妈妈...
+message.finalBattle.death9=我快不行了...你们加油
+
+message.finalBattle.rankOne0=§c血债血偿，该还债了，寄生虫们。
+message.finalBattle.rankOne1=§e先解决远程单位，注意协增兽和蛛形兽。
+message.finalBattle.rankOne2=§a斩草除根。
+message.finalBattle.rankOne3=§7我有种不祥的预感......
+message.finalBattle.rankOne4=§b节点之间一定会有间隔，而附近的节点一定就在附近！正确的废话！总之在附近！
+
+message.finalBattle.rankTwo0=小心始祖种寄生兽，靠近他们会亡灵化，治疗效果会受到极大抑制，保证自己不饿肚子吧！
+message.finalBattle.rankTwo1=哦！“寄群净化”也可以对抗亡灵化，可以试试。
+message.finalBattle.rankTwo2=天幕兄弟，你的气象武器准备好了吗？还有6分钟！撑住啊，听众朋友们，它说还有6分钟！
+message.finalBattle.rankTwo3=§6§k They §l§r§6 净化一切
+message.finalBattle.rankTwo4=§b§k They §l§r§b 天堂
+message.finalBattle.rankTwo5=§4§k They §l§r§c 寄生永生
+message.finalBattle.rankTwo6=§c§k They §l§r§e 好红，好甜，血
+message.finalBattle.rankTwo7=§e§k They §l§r§e 是食物
+message.finalBattle.rankTwo8=§e§k They §l§r§e 快跑
+message.finalBattle.rankTwo9=§5§k They §l§r§5 这里..救救我..解脱我..
+message.finalBattle.rankTwo10=身体，好痛，吃掉你们
+message.finalBattle.rankTwo11=摧毁，吞噬，进化
+message.finalBattle.rankTwo12=§b§k They §l§r§b 妈妈......吃掉你。
+message.finalBattle.rankTwo13=§7§k They §l§r§7 好多声音..谁，谁在说话..
+message.finalBattle.rankTwo14=愚蠢，狂妄，区区人类......
+message.finalBattle.rankTwo15=天幕已抵达目标位置，进入同步轨道，气象武器充能完毕，例外个体已添加！......听众朋友们，捂住耳朵！
+
+message.finalBattle.rankThree0=§b最艰难的时刻已经过去，始祖种已经被打败，但残留的恐惧将持续影响这片区域。
+message.finalBattle.rankThree1=§b继续守护信标，注意靠近信标抵抗亡灵化状态。
+message.finalBattle.rankThree2=§c绝不退缩！
+
+message.finalBattle.rankFour0=§b干的漂亮，剩下的同化寄群已经不足为惧，
+message.finalBattle.rankFour1=§b继续守护信标，传输的样本就快完全解析了，胜利就在眼前，除非它现在更新系统！
+message.finalBattle.rankFour2=§b好久没有这么畅快的演......战斗过了呢，朋友们。
+message.finalBattle.rankFour3=胜利的曙光就在眼前，瞄准净化信标，最大功率输出！
+
+message.finalBattle.end0=§b本次样本已完全解析，世界已完全净化。“最终决战”计划完成，天幕转入休眠。恭喜幸存的人类。
+message.finalBattle.end1=§b恭喜你们，在这不讲道理的末世里找到了活下去的办法。
+message.finalBattle.end2=§b狂妄的寄生兽们就像计划一样，向大地伸出了贪婪的手掌，自己暴露了庞大的身躯，不再潜伏。
+message.finalBattle.end3=§b而你们成功注意到了失落的人类文明，留下了的些许手段。即使偏离计划，也将他们一网打尽，成功消灭了。
+message.finalBattle.end4=§b这里将不再受到寄生兽的污染，但一切的伤痕都会留在这片土地上，除非，你动手去改变它。
+message.finalBattle.end5=§b我们无法装作一切都未开始，也无法装作一切都已结束，但哪怕是些许的希望，哪怕只是片刻的安宁，人类也会挣扎着生存吧。
+message.finalBattle.end6=§b无论时代如何变迁，无论未来如何迷茫，人类都会为了迈向未来，而在过去、亦或此刻，刻下努力的证明。
+message.finalBattle.end7=§e也许在不久的未来，人类又会迎来下一次的危机，也许，一切都在不断的重演。肉体可死，但思想不灭。
+message.finalBattle.end8=§e薪火相传，活下去吧，人类，挣扎着、哭着、笑着，迈向未来吧。
+message.finalBattle.end9=§e称呼自己为英雄也好，称呼自己为救世主也罢。就像一直以来一样，做出你的选择，决定前进的方向。
+message.finalBattle.end10=§6那么，谢谢你们的游玩，有缘再会咯。
+message.finalBattle.end11=§c人类，犹如一支浮标，任何风浪也无法使它沉没。————棱罗
+message.finalBattle.end12-0=§e===========================
+message.finalBattle.end12-1=§b程序:浅白 §d美工:阿酒，北上，艾芙
+message.finalBattle.end12-2=§a协力感谢:电台投稿，LA01，测试群老板
+message.finalBattle.end12-3=旧版太阳风暴:碧落 §a枪械模型：起重基喵 §eneta：盘古之战，2077
+message.finalBattle.end12-4=§f安心睡眠委员会 出品
+message.finalBattle.end12-5=§e===========================
+message.finalBattle.end12=§cEND
+message.finalBattle.end13=等等，还有一个人没出场
+message.finalBattle.end14=一切都会改变，一切都会离去。除了......电台！
+message.finalBattle.end15=亲爱的听众朋友们，想我吗，哎呀，我也是啊，我也想死我了。
+message.finalBattle.end16=继续给大家分享我刚编的新闻，寄生兽和人类决战啦！谁赢了啊！我赢了！
+message.finalBattle.end17=魔神柱教教主已经被拘捕啦！没收了整整一墙壁稀有素材，他们说自己动都没敢动过，是为了打入敌人内部不得不获取的，都是为了人类。我信了！但处罚他们的又不是我~
+message.finalBattle.end18=至于残留的寄生兽，有些脑子灵活的想靠他们办鬼屋，但是哪有顾客啊，没人来。
+message.finalBattle.end19=你们能不能活得有点人类的样子，一个个浓眉大眼的，不要活得像叛变一样，连基因都被污染成......咳咳。什么都没有。
+message.finalBattle.end20=末世电台永远等待您的联络~我是末世电台主持人！兼职天幕机关辅脑的，人工智能1844号。
+message.finalBattle.end21=本次播报到此结束，下次再见，人类！
+message.finalBattle.end22=§b[解锁结局：勇气赞歌]
+
+message.finalBattle.bad0=§c最近，我一直在做梦，梦里的世界逐渐被血红色污染。
+message.finalBattle.bad1=§e转动的柱子扭曲着大地，亘古的君主霸占了天空。
+message.finalBattle.bad2=§a被唤作“火种“的英雄教会了人们种植与采集，教会了人们搭建净化信标，甚至教会了人们免于死亡惩罚的方法。
+message.finalBattle.bad3=§c然而，死亡的代价不可避免，灵魂的破损不可修复，世界的净化不可逆转。
+message.finalBattle.bad4=§4唯有...§5§k T§4h§3e§2y §l§r§4寄生永生
+message.finalBattle.bad5=早上好，末日城，今天又是崭新的一天，诶等等，至少不是今天。
+message.finalBattle.bad6=由于在净化之战中灵魂磨损过多，火种的持有者选择了将各位转移到新世界。
+message.finalBattle.bad7=也许未来这块土地也会被再次污染，未来的英雄们会做出如何的选择呢？
+message.finalBattle.bad8=§b也终有人，会沉醉在湛蓝色的夜空中。
+message.finalBattle.bad9=§e[达成这个结局说明净化之战人类方死亡次数过多或拖延时间过长，也许还有其他拯救的方法...？]
+message.finalBattle.bad10=§b[解锁结局：寄生永生]
+
+message.summer_core_block.active=下界核心已启动！
+
+# Config
+overlast.client=客户端
+overlast.client.tooltip=仅限客户端设定
+config.overlast:client.barPos=属性条位置
+config.overlast:client.barPos.tooltip=指定GUI条的放置位置。你可以把它设置为以下任何一种： \ntop left[左上] \ntop right[右上] \nmiddle left[左中] \nmiddle right[右中] \nbottom left[左下] \nbottom right[右下] \n 中间要使用空格分割。如果输入有误，它将默认为右中。
+config.overlast:client.enableSound=启用低理智音效
+config.overlast:client.enableSound.tooltip=是否启用低理智音效，可能与部分mod冲突。
+config.overlast:client.enableEffect=启用低理智幻觉效果
+config.overlast:client.enableEffect.tooltip=是否启用低理智幻觉效果，可能与部分mod冲突。
+config.overlast:client.Xoffset=UI水平偏移量
+config.overlast:client.Xoffset.tooltip=设置为正数时，UI将向右偏移，设置为负数时，UI将向左偏移。
+config.overlast:client.Yoffset=UI垂直偏移量
+config.overlast:client.Yoffset.tooltip=设置为正数时，UI将向下偏移，设置为负数时，UI将向上偏移。
+
+overlast.mechanics=机制
+overlast.mechanics.tooltip=具有主要玩家机制的设置
+config.overlast:mechanics.showRequestDirtyClock=切换演化条显示机制
+config.overlast:mechanics.showRequestDirtyClock.tooltip=开启后，仅持有肮脏的时钟时才会显示自然演化条。
+config.overlast:mechanics.enableDailyBOSS=启用每日BOSS
+config.overlast:mechanics.enableDailyBOSS.tooltip=是否启用每日BOSS，演化阶段高时每日会随机生成高等寄生兽。
+config.overlast:mechanics.enableSanity=启用理智机制
+config.overlast:mechanics.enableSanity.tooltip=是否启用理智机制，这将增加游戏前期的难度。
+config.overlast:mechanics.enableLightEffect=启用亮度机制
+config.overlast:mechanics.enableLightEffect.tooltip=是否启用亮度影响理智机制，包括光亮处恢复理智和暗处降低理智。
+config.overlast:mechanics.sanityScale=理智变化速率
+config.overlast:mechanics.sanityScale.tooltip=理智变化的速率，包括增加和降低。
+config.overlast:mechanics.naturalEvolutionScale=自然演化速率
+config.overlast:mechanics.naturalEvolutionScale.tooltip=演化等级为3或以上时将会开启自然演化，越高演化的越快。
+config.overlast:mechanics.enableTemperature=启用温度机制
+config.overlast:mechanics.enableTemperature.tooltip=是否启用隐藏的温度机制，影响夏季和冬季玩家的BUFF效果。
+config.overlast:mechanics.temperatureScale=温度变化速率
+config.overlast:mechanics.temperatureScale.tooltip=温度变化的速率，影响室温对玩家体温的改变速度。
+config.overlast:mechanics.enableCourage=启用勇气机制
+config.overlast:mechanics.enableCourage.tooltip=是否启用勇气机制，用于代替理智对抗寄生兽。
+config.overlast:mechanics.courageScale=勇气变化速率
+config.overlast:mechanics.courageScale.tooltip=勇气变化的速率，包括增加与降低。
+config.overlast:mechanics.enableParasitic=启用感染机制
+config.overlast:mechanics.enableParasitic.tooltip=是否启用感染机制，这将增加游戏的演化速度。
+config.overlast:mechanics.parasiticScale=感染变化速率
+config.overlast:mechanics.parasiticScale.tooltip=感染变化的速率，包括自然降低与受到感染时的增加。
+config.overlast:mechanics.enableRadio=启用电台广播
+config.overlast:mechanics.enableRadio.tooltip=为整合包提供的功能，整合包作者可以通过资源包自定义相关文本。
+
+overlast.seasons=季节
+config.overlast:seasons.enableSeasons=启用季节
+config.overlast:seasons.enableSeasons.tooltip=是否启用季节设定，这将影响环境温度和树叶颜色
+config.overlast:seasons.winterLength=冬季时长
+config.overlast:seasons.winterLength.tooltip=冬季的时长，在冬季大部分生物群系会下雪，作物会停止生长，\n设置0来禁用该季节。
+config.overlast:seasons.springLength=春季时长
+config.overlast:seasons.springLength.tooltip=春季的时长，在春季树叶颜色将会复原，\n设置0来禁用该季节。
+config.overlast:seasons.summerLength=夏季时长
+config.overlast:seasons.summerLength.tooltip=夏季的时长，在夏季大部分生物群系会变热，\n设置0来禁用该季节。
+config.overlast:seasons.autumnLength=秋季时长
+config.overlast:seasons.autumnLength.tooltip=秋季的时长，在秋季树叶会变色，\n设置0来禁用该季节。
+config.overlast:seasons.defaultSeason=初始季节
+config.overlast:seasons.defaultSeason.tooltip=决定你创建游戏时的季节。冬季 : 1;春季:  2;夏季: 3;秋季: 4;默认: 0;
+config.overlast:seasons.enableSummerParasiteEffect=启用夏季寄生兽效果
+config.overlast:seasons.enableSummerParasiteEffect.tooltip=启用后夏季的白天寄生兽将自燃，失去适应性。
+config.overlast:seasons.enableSummerPlayerEffect=启用夏季玩家效果
+config.overlast:seasons.enableSummerPlayerEffect.tooltip=启用后夏季玩家在高温生物群系将受到高热辐射以及过热效果。
+config.overlast:seasons.enableWinterParasiteEffect=启用冬季寄生兽效果
+config.overlast:seasons.enableWinterParasiteEffect.tooltip=启用后冬季寄生兽将获得力量速度加成。
+config.overlast:seasons.enableWinterPlayerEffect=启用冬季玩家效果
+config.overlast:seasons.enableWinterPlayerEffect.tooltip=启用后冬季玩家在低温生物群系将受到寒潮侵袭以及霜冻效果。
+
+overlast.custom=自定义
+overlast.custom.tooltip=自定义机制
+config.overlast:custom.enableAutoFoodSan=自动配置食物理智
+config.overlast:custom.enableAutoFoodSan.tooltip=是否启用自动配置食物理智，启用之后不在配置列表的食物会按照2点饥饿值1点理智回复来配置。
+config.overlast:custom.foodSanity=食物理智
+config.overlast:custom.foodSanity.tooltip=自定义食物提供的理智值。(eg: minecraft:apple;0;10)
+config.overlast:custom.hideUI=隐藏UI
+config.overlast:custom.hideUI.tooltip=隐藏指定等级的演化条(eg: -1,0,3)
+config.overlast:custom.specimenFarm=样本方块（农业）配方
+config.overlast:custom.specimenFarm.tooltip=在枪械工作台中合成。(eg: minecraft:id;amount;meta)
+config.overlast:custom.specimenCell=样本方块（细胞）配方
+config.overlast:custom.specimenCell.tooltip=在枪械工作台中合成。(eg: minecraft:id;amount;meta)
+config.overlast:custom.specimenInfect=样本方块（感染）配方
+config.overlast:custom.specimenInfect.tooltip=在枪械工作台中合成。(eg: minecraft:id;amount;meta)
+config.overlast:custom.finalSpecimen=世界净化核心配方
+config.overlast:custom.finalSpecimen.tooltip=在枪械工作台中合成。(eg: minecraft:id;amount;meta)
+config.overlast:custom.finalBattleDim=最终决战维度ID
+config.overlast:custom.finalBattleDim.tooltip=控制最终决战的维度ID，默认为0-主世界(eg: 0)
+config.overlast:custom.SRPEnchantType=SRP附魔类型
+config.overlast:custom.SRPEnchantType.tooltip=寄灵驱散的可用附魔类型。 0-全部 1-武器 2-钓鱼竿 3-弓 (eg: 1)
+config.overlast:custom.SRPEnchantRarity=SRP附魔稀有度
+config.overlast:custom.SRPEnchantRarity.tooltip=寄灵驱散的附魔稀有度。 0-COMMON 1-UNCOMMON 2-RARE 3-VERY_RARE(eg: 3)
+config.overlast:custom.SRPEnchantBaseDamage=SRP附魔基础伤害
+config.overlast:custom.SRPEnchantBaseDamage.tooltip=寄灵驱散附魔的基础伤害， 伤害计算公式为 1.25 + 0.75 * 附魔等级 (eg: 0.75f)
+config.overlast:custom.lowSanityPools=低理智池
+config.overlast:custom.lowSanityPools.tooltip=低理智刷怪池，phase为最小出现该怪物的演化阶段。 (eg: minecraft:id;phase;rate)
+config.overlast:custom.lowSanityPotion=低理智药水效果
+config.overlast:custom.lowSanityPotion.tooltip=低理智时给予的药水效果。 (eg: minecraft:id;duration;amplifier)
+config.overlast:custom.lowSanityParasites=低理智感染效果
+config.overlast:custom.lowSanityParasites.tooltip=在寄群感染状态下给予的药水效果，parasites表示感染药水等级。 (eg: minecraft:id;duration;amplifier;parasites)
+config.overlast:custom.sanityDimBlacklist=理智维度黑名单
+config.overlast:custom.sanityDimBlacklist.tooltip=在以下维度中，理智不会随着亮度的变化而变化。 (eg: 1,-1)
+config.overlast:custom.finalBattleRewards=决战奖励
+config.overlast:custom.finalBattleRewards.tooltip=世界净化之战胜利奖励物品。(eg: minecraft:id;amount;meta)
+
+#command line
+commands.overlast.usage=指令用法

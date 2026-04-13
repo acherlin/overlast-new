@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+      "layer0": "overlast:items/baseball_pole_held"
+    }
+}
