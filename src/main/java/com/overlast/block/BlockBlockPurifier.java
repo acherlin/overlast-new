@@ -2,19 +2,17 @@ package com.overlast.block;
 
 import com.dhanantry.scapeandrunparasites.SRPMain;
 import com.dhanantry.scapeandrunparasites.block.*;
+import com.dhanantry.scapeandrunparasites.block.slabs.BlockSlabRubble;
 import com.dhanantry.scapeandrunparasites.network.SRPPacketParticle;
-import com.dhanantry.scapeandrunparasites.util.ParasiteEventWorld;
-import com.dhanantry.scapeandrunparasites.util.handlers.BiomeUpdateQueue;
-import com.dhanantry.scapeandrunparasites.world.SRPWorldData;
-import com.dhanantry.scapeandrunparasites.world.biome.BiomeParasiteBase;
 import com.overlast.OverLast;
 import com.overlast.creativetab.TabOverLast;
+import com.overlast.util.OverUtil;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockAir;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -50,7 +48,7 @@ public class BlockBlockPurifier
         if (head.getItem() != Items.AIR) return flag;
 
             worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
-            ParasiteEventWorld.killBiome(worldIn, pos, 16);
+            OverUtil.UTIL.killBiome(worldIn, pos, 16);
             int distanceX = pos.getX();
             int distanceY = pos.getY();
             int distanceZ = pos.getZ();
@@ -87,7 +85,7 @@ public class BlockBlockPurifier
                         }
 
                         //感染草脉+嘴
-                        if (targetBlock instanceof BlockInfestedBush || targetBlock instanceof BlockParasiteBush || targetBlock instanceof BlockParasiteMouth || targetBlock instanceof BlockStairBase || targetBlock instanceof BlockSlabHalf || targetBlock instanceof BlockSlabDouble
+                        if (targetBlock instanceof BlockInfestedBush || targetBlock instanceof BlockParasiteBush || targetBlock instanceof BlockParasiteMouth || targetBlock instanceof BlockStairBase || targetBlock instanceof BlockSlab || targetBlock instanceof BlockSlabRubble
                                 || targetBlock instanceof BlockParasiteCanister || targetBlock instanceof BlockParasiteThin) {
                             worldIn.setBlockState(pos.add(x, y - distanceY, z), Blocks.AIR.getDefaultState());
                             continue;
@@ -106,12 +104,14 @@ public class BlockBlockPurifier
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
         if (worldIn.isRemote)
             return;
-        ParasiteEventWorld.killBiome(worldIn, pos, 16);
+        OverUtil.UTIL.killBiome(worldIn, pos, 16);
         worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
 
         for (int i = 0; i <= 3; i++)
             SRPMain.network.sendToAll((IMessage)new SRPPacketParticle(pos.getX(), (pos.getY() + 1), pos.getZ(), 0.5F, 0.5F, (byte)2));
     }
+
+
 
 }
 

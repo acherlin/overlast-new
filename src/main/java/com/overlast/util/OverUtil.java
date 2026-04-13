@@ -1,7 +1,10 @@
 package com.overlast.util;
 
 import com.dhanantry.scapeandrunparasites.util.config.SRPConfigSystems;
+import com.dhanantry.scapeandrunparasites.util.handlers.BiomeUpdateQueue;
 import com.dhanantry.scapeandrunparasites.world.SRPSaveData;
+import com.dhanantry.scapeandrunparasites.world.SRPWorldData;
+import com.dhanantry.scapeandrunparasites.world.biome.BiomeParasiteBase;
 import com.overlast.OverLast;
 import com.overlast.cap.sanity.ISanity;
 import com.overlast.cap.sanity.SanityProvider;
@@ -15,6 +18,7 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.Biomes;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
@@ -23,7 +27,9 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.fml.common.Optional;
 import sereneseasons.api.config.SeasonsOption;
 import sereneseasons.api.config.SyncedConfig;
@@ -31,6 +37,8 @@ import sereneseasons.api.config.SyncedConfig;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+
+import static com.dhanantry.scapeandrunparasites.block.BlockBiomePurifier.positionToBiome;
 
 public class OverUtil {
     public static OverUtil UTIL = new OverUtil();
@@ -53,23 +61,23 @@ public class OverUtil {
 
 
     public int getPhase(World world) {
-        return SRPSaveData.get(world).getEvolutionPhase(world.provider.getDimension());
+        return SRPSaveData.get(world,0).getEvolutionPhase(world.provider.getDimension());
     }
 
     public boolean setPhase(World world, byte value) {
-        return SRPSaveData.get(world).setEvolutionPhase(world.provider.getDimension(), value, true, world, true);
+        return SRPSaveData.get(world,0).setEvolutionPhase(world.provider.getDimension(), value, true, world);
     }
 
     public int getTotalPoint(World world) {
-        return SRPSaveData.get(world).getTotalKills(world.provider.getDimension());
+        return SRPSaveData.get(world,0).getTotalKills(world.provider.getDimension());
     }
 
     public void setCooldown(World world,int cd) {
-        SRPSaveData.get(world).setCooldown(cd,world,world.provider.getDimension());
+        SRPSaveData.get(world,0).setCooldown(cd,world,world.provider.getDimension(), false);
     }
 
     public int getCooldown(World world) {
-        return SRPSaveData.get(world).getCooldown(world,world.provider.getDimension());
+        return SRPSaveData.get(world,0).getCooldown(world,world.provider.getDimension());
     }
 
     public int getAddEvoPoint(int phase) {
@@ -103,7 +111,7 @@ public class OverUtil {
     }
 
     public void addEvoPoint(World world,int evoPoint) {
-        SRPSaveData.get(world).setTotalKills(world.provider.getDimension(), (int)(evoPoint*OverConfig.MECHANICS.naturalEvolutionScale), true, world,true);
+        SRPSaveData.get(world,0).setTotalKills(world.provider.getDimension(), (int)(evoPoint*OverConfig.MECHANICS.naturalEvolutionScale), true, world,true);
 
         //OverLast.logger.warn("实际增加点数："+(int)(evopoint*OverConfig.MECHANICS.naturalEvolutionScale)+" 比例"+OverConfig.MECHANICS.naturalEvolutionScale);
 
@@ -113,7 +121,7 @@ public class OverUtil {
         if(force) {
             setCooldown(world,0);
         }
-        SRPSaveData.get(world).setTotalKills(world.provider.getDimension(), (int)(evoPoint*OverConfig.MECHANICS.naturalEvolutionScale), true, world,true);
+        SRPSaveData.get(world,0).setTotalKills(world.provider.getDimension(), (int)(evoPoint*OverConfig.MECHANICS.naturalEvolutionScale), true, world,true);
 
     }
 
@@ -347,6 +355,21 @@ public class OverUtil {
         }
     }
 
-
+    public void killBiome(World worldIn, BlockPos pos, int range) {
+        final SRPWorldData data = SRPWorldData.get(worldIn);
+        final int worldTime = 0;
+        for (int x = pos.getX() - range; x <= pos.getX() + range; ++x) {
+            for (int z = pos.getZ() - range; z <= pos.getZ() + range; ++z) {
+                final int age = data.nearestHeartAge(pos, true, worldTime);
+                final int distance = data.getDistanceSpreadByAge(age, false);
+                final BlockPos convert = new BlockPos(x, pos.getY(), z);
+                if (worldIn.getBiome(convert) instanceof BiomeParasiteBase) {
+                    Biome originalBiome = worldIn.getBiomeProvider().getBiome(pos, Biomes.PLAINS);
+                    positionToBiome(worldIn, convert, Biome.getIdForBiome(originalBiome));
+                    BiomeUpdateQueue.enqueue(convert.getX(), convert.getY(), convert.getZ(), false, Biome.getIdForBiome(originalBiome), worldIn.provider.getDimension());
+                }
+            }
+        }
+    }
 
 }

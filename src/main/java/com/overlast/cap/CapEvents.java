@@ -195,7 +195,7 @@ public class CapEvents {
 				boolean hideBool=true;
 				if(hideUI!=null) {
 					for (int level : hideUI) {
-						if(level== SRPSaveData.get(player.getEntityWorld()).getEvolutionPhase(player.getEntityWorld().provider.getDimension())) {
+						if(level== SRPSaveData.get(player.getEntityWorld(),0).getEvolutionPhase(player.getEntityWorld().provider.getDimension())) {
 							hideBool=false;
 						}
 					}

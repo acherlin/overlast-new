@@ -65,7 +65,7 @@ public class ItemEvoDevice extends Item {
 
             if(nodesX.size()== 0) {
                 player.sendMessage(new TextComponentTranslation("message.evodevice.normal"));
-            }else if((int)(Math.random()*10)>=5&& SRPSaveData.get(player.getEntityWorld()).getEvolutionPhase(player.getEntityWorld().provider.getDimension())==7||(int)(Math.random()*10)>=2&&SRPSaveData.get(player.getEntityWorld()).getEvolutionPhase(player.getEntityWorld().provider.getDimension())==8) {
+            }else if((int)(Math.random()*10)>=5&& SRPSaveData.get(player.getEntityWorld(),0).getEvolutionPhase(player.getEntityWorld().provider.getDimension())==7||(int)(Math.random()*10)>=2&&SRPSaveData.get(player.getEntityWorld(),0).getEvolutionPhase(player.getEntityWorld().provider.getDimension())==8) {
                 player.sendMessage(new TextComponentTranslation("message.evodevice.fail"));
             }else {
                 String out = "message.evodevice.success";

@@ -309,7 +309,7 @@ public class WorldSeason {
                         }
                     }
                     //寄生等级小于6时解冻
-                    if (SRPSaveData.get(player.getEntityWorld()).getEvolutionPhase(player.getEntityWorld().provider.getDimension()) < 6 && worldState < 3) {
+                    if (SRPSaveData.get(player.getEntityWorld(),0).getEvolutionPhase(player.getEntityWorld().provider.getDimension()) < 6 && worldState < 3) {
                         worldState = 0;
                     }
                     //静谧四季联动

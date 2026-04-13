@@ -3,6 +3,7 @@ package com.overlast.finalbattle;
 import com.dhanantry.scapeandrunparasites.entity.monster.adapted.*;
 import com.dhanantry.scapeandrunparasites.entity.monster.ancient.EntityOronco;
 import com.dhanantry.scapeandrunparasites.entity.monster.ancient.EntityTerla;
+import com.dhanantry.scapeandrunparasites.entity.monster.crude.EntityCruxA;
 import com.dhanantry.scapeandrunparasites.entity.monster.crude.EntityHost;
 import com.dhanantry.scapeandrunparasites.entity.monster.crude.EntityLesh;
 import com.dhanantry.scapeandrunparasites.entity.monster.deterrent.EntityTonro;
@@ -47,6 +48,21 @@ public class FBEntity {
     public void onSpawnEntityInfPlayer(World world,int count) {
         for (int i = 0; i < count; i++) {
             EntityInfPlayer them = new EntityInfPlayer(world);
+            them.setLocationAndAngles(WorldSeason.getBattlePosX() + getRandomPos(), WorldSeason.getBattlePosY() + 2, WorldSeason.getBattlePosZ() + getRandomPos(), 0.0f, 0);
+            them.addPotionEffect(new PotionEffect(MobEffects.SPEED, 10000, 1, false, false));
+            them.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 10000, 2, false, false));
+            them.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 10000, 2, false, false));
+            if (Loader.isModLoaded("dynamicstealth")) {
+                them.addPotionEffect(new PotionEffect(Potions.POTION_SOULSIGHT, 10000, 0, false, false));
+            }
+            world.spawnEntity(them);
+        }
+    }
+
+    //克鲁斯
+    public void onSpawnEntityCrux(World world,int count) {
+        for (int i = 0; i < count; i++) {
+            EntityCruxA them = new EntityCruxA(world);
             them.setLocationAndAngles(WorldSeason.getBattlePosX() + getRandomPos(), WorldSeason.getBattlePosY() + 2, WorldSeason.getBattlePosZ() + getRandomPos(), 0.0f, 0);
             them.addPotionEffect(new PotionEffect(MobEffects.SPEED, 10000, 1, false, false));
             them.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 10000, 2, false, false));

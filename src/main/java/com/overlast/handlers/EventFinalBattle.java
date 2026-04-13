@@ -1,9 +1,9 @@
 
 package com.overlast.handlers;
 
-import com.creativemd.playerrevive.api.event.PlayerKilledEvent;
 import com.creativemd.playerrevive.server.PlayerReviveServer;
 import com.dhanantry.scapeandrunparasites.block.*;
+import com.dhanantry.scapeandrunparasites.block.slabs.BlockSlabRubble;
 import com.dhanantry.scapeandrunparasites.init.SRPBlocks;
 import com.dhanantry.scapeandrunparasites.util.ParasiteEventWorld;
 import com.dhanantry.scapeandrunparasites.world.SRPSaveData;
@@ -24,6 +24,7 @@ import com.overlast.util.OverUtil;
 import com.overlast.util.WorldDataMgr;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockAir;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.monster.EntityMob;
@@ -579,8 +580,8 @@ public class EventFinalBattle {
 
     //世界净化事件
     public void onEvoPurifier() {
-        int rank = SRPSaveData.get(fbWorld).getEvolutionPhase(dim);
-        int evopoint = SRPSaveData.get(fbWorld).getTotalKills(dim);
+        int rank = SRPSaveData.get(fbWorld,0).getEvolutionPhase(dim);
+        int evopoint = SRPSaveData.get(fbWorld,0).getTotalKills(dim);
         int updateTimer = WorldSeason.getFinalTime();
         //总共12000次减少，~->8,8-7,7-6,6-5,5-4,4-3,3-2,2-1,1-0,-1,-2
         //每个阶段1000次吧~
@@ -610,11 +611,11 @@ public class EventFinalBattle {
                 onEvoRemove(6000);
         } else if (updateTimer > 4802 && updateTimer <= 5002 && rank >= 0 && evopoint >= 12) {
             onEvoRemove(12);
-            SRPSaveData.get(fbWorld).setGaining(false,dim);
+            SRPSaveData.get(fbWorld,0).setGaining(false,dim);
             if (rank >= 2)
                 onEvoRemove(6000);
         } else if (updateTimer > 4802) {
-            SRPSaveData.get(fbWorld).setTotalKills(dim,-200,true, fbWorld,true);
+            SRPSaveData.get(fbWorld,0).setTotalKills(dim,-200,true, fbWorld,true);
         }
         //世界净化开始
         switch (updateTimer) {
@@ -655,11 +656,11 @@ public class EventFinalBattle {
         int posY = WorldSeason.getBattlePosY();
         int posZ = WorldSeason.getBattlePosZ();
         onRemoveNode();
-        ParasiteEventWorld.placeHeartInWorld(fbWorld, new BlockPos(posX + FBEntity.fbEntity.getRandomPos() * 3 + 20, posY - 50, posZ + FBEntity.fbEntity.getRandomPos() * 3 + 20));
-        ParasiteEventWorld.placeHeartInWorld(fbWorld, new BlockPos(posX + 11000, posY, posZ));
-        ParasiteEventWorld.placeHeartInWorld(fbWorld, new BlockPos(posX - 11000, posY, posZ));
-        ParasiteEventWorld.placeHeartInWorld(fbWorld, new BlockPos(posX, posY, posZ + 11000));
-        ParasiteEventWorld.placeHeartInWorld(fbWorld, new BlockPos(posX, posY, posZ - 11000));
+        ParasiteEventWorld.placeHeartInWorld(fbWorld, new BlockPos(posX + FBEntity.fbEntity.getRandomPos() * 3 + 20, posY - 50, posZ + FBEntity.fbEntity.getRandomPos() * 3 + 20),1);
+        ParasiteEventWorld.placeHeartInWorld(fbWorld, new BlockPos(posX + 11000, posY, posZ),1);
+        ParasiteEventWorld.placeHeartInWorld(fbWorld, new BlockPos(posX - 11000, posY, posZ),1);
+        ParasiteEventWorld.placeHeartInWorld(fbWorld, new BlockPos(posX, posY, posZ + 11000),1);
+        ParasiteEventWorld.placeHeartInWorld(fbWorld, new BlockPos(posX, posY, posZ - 11000),1);
     }
 
     public void onRemoveNode() {
@@ -681,7 +682,7 @@ public class EventFinalBattle {
             World worldIn = fbWorld;
             BlockPos pos = BlockPos.ORIGIN.add(WorldSeason.getBattlePosX(), WorldSeason.getBattlePosY(), WorldSeason.getBattlePosZ());
             int distanceY = pos.getY();
-            ParasiteEventWorld.killBiome(worldIn, pos, 16);
+            OverUtil.UTIL.killBiome(worldIn, pos, 16);
             for (int y = 0; y <= 255; y++) {
                 for (int x = -16 + targetX; x <= targetX + 16; x++) {
                     for (int z = -16 + targetZ; z <= 16 + targetZ; z++) {
@@ -715,7 +716,7 @@ public class EventFinalBattle {
                         }
 
                         //感染草脉+嘴
-                        if (targetBlock instanceof BlockInfestedBush || targetBlock instanceof BlockParasiteBush || targetBlock instanceof BlockParasiteMouth || targetBlock instanceof BlockStairBase || targetBlock instanceof BlockSlabHalf || targetBlock instanceof BlockSlabDouble
+                        if (targetBlock instanceof BlockInfestedBush || targetBlock instanceof BlockParasiteBush || targetBlock instanceof BlockParasiteMouth || targetBlock instanceof BlockStairBase || targetBlock instanceof BlockSlab || targetBlock instanceof BlockSlabRubble
                                 || targetBlock instanceof BlockParasiteCanister || targetBlock instanceof BlockParasiteThin) {
                             worldIn.setBlockState(pos.add(x, y - distanceY, z), Blocks.AIR.getDefaultState());
                             continue;

@@ -71,11 +71,10 @@ public class DailyRadio {
                             i18season = new TextComponentTranslation("message.seasons.error");
                     }
 
-                    mc.getPlayerList().sendMessage(new TextComponentTranslation("message.seasons.forecast0", i18season, WorldSeason.getDaysIntoSeason()));
-
                     if (OverConfig.MECHANICS.enableRadio) {
+                        mc.getPlayerList().sendMessage(new TextComponentTranslation("message.seasons.forecast0", i18season, WorldSeason.getDaysIntoSeason()));
                         //小于7级播放常规广播
-                        if (WorldSeason.getWorldState() < 3 && SRPSaveData.get(player.getEntityWorld()).getEvolutionPhase(player.getEntityWorld().provider.getDimension()) < 7) {
+                        if (WorldSeason.getWorldState() < 3 && SRPSaveData.get(player.getEntityWorld(),0).getEvolutionPhase(player.getEntityWorld().provider.getDimension()) < 7) {
                             int seatext = (int) (Math.random() * 20);
                             sendMessageOnPhase(RadioPhase.daily,seatext);
                             //春季
@@ -96,14 +95,14 @@ public class DailyRadio {
                                 sendMessageOnPhase(RadioPhase.dailyWinter,seatext);
                         }
                         int seatext = (int) (Math.random() * 20);
-                        if (WorldSeason.getWorldState() < 3 && SRPSaveData.get(player.getEntityWorld()).getEvolutionPhase(player.getEntityWorld().provider.getDimension()) >= 7) {
+                        if (WorldSeason.getWorldState() < 3 && SRPSaveData.get(player.getEntityWorld(),0).getEvolutionPhase(player.getEntityWorld().provider.getDimension()) >= 7) {
                             sendMessageOnPhase(RadioPhase.dailyEnd,seatext);
                         }
                     }
 
                 }
 
-                if (OverConfig.MECHANICS.enableDailyBOSS && (worldTime % 24000 == 100 && (player == mc.getPlayerList().getPlayers().get(0) || mc.isSinglePlayer()) && SRPSaveData.get(player.getEntityWorld()).getEvolutionPhase(player.getEntityWorld().provider.getDimension()) == 8)) {
+                if (OverConfig.MECHANICS.enableDailyBOSS && (worldTime % 24000 == 100 && (player == mc.getPlayerList().getPlayers().get(0) || mc.isSinglePlayer()) && SRPSaveData.get(player.getEntityWorld(),0).getEvolutionPhase(player.getEntityWorld().provider.getDimension()) == 8)) {
                     List<EntityPlayer> dim0 = mc.getWorld(0).playerEntities;
                     if (dim0.isEmpty()) return;
                     int RandPlayer = (int) (Math.random() * dim0.size()); //范围主世界随机一个玩家()

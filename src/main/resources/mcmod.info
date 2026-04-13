@@ -1,15 +1,15 @@
 [
   {
-    "modid": "overlast",
-    "name": "Parasites Addon : OverLast",
-    "description": "Parasites Addon, Added a new HUD Bar to display Evolution Points,Some Items to defeat Parasites/Node or Healing Animals.",
+    "modid": "${mod_id}",
+    "name": "${mod_name}",
+    "description": "${mod_description}",
     "version": "${mod_version}",
-    "mcversion": "${minecraft_version}",
-    "url": "",
-    "updateUrl": "",
-    "authorList": ["Acherlins,Elflia,Anihero,Kitakamippko"],
-    "credits": "",
-    "logoFile": "",
+    "mcversion": "1.12.2",
+    "url": "${mod_url}",
+    "updateUrl": "${mod_update_json}",
+    "authorList": ["${mod_authors}"],
+    "credits": "${mod_credits}",
+    "logoFile": "${mod_logo_path}",
     "screenshots": [],
     "dependencies": []
   }
