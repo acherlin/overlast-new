@@ -109,7 +109,7 @@ public class EventFinalBattle {
                     for (int z = -5; z < 6; z++) {
                         if (!(checkBlockPos(posX + x, posY + y, posZ + z, Blocks.IRON_BLOCK) || checkBlockPos(posX + x, posY + y, posZ + z, Blocks.GOLD_BLOCK) || checkBlockPos(posX + x, posY + y, posZ + z, Blocks.EMERALD_BLOCK) || checkBlockPos(posX + x, posY + y, posZ + z, Blocks.DIAMOND_BLOCK) || checkBlockPos(posX + x, posY + y, posZ + z, Blocks.BEACON) || checkBlockPos(posX + x, posY + y, posZ + z, Blocks.AIR) || checkBlockPos(posX + x, posY + y, posZ + z, Blocks.TORCH) ||
                                 (checkBlockPos(posX + x, posY + y, posZ + z, ModBlocks.FinalSpecimen)) || (checkBlockPos(posX + x, posY + y, posZ + z, ModBlocks.SpecimenCell)) || (checkBlockPos(posX + x, posY + y, posZ + z, ModBlocks.SpecimenFarm)) || (checkBlockPos(posX + x, posY + y, posZ + z, ModBlocks.SpecimenInfect)) || (!checkBlockPos(posX + x, posY + y+3, posZ + z, Blocks.AIR))
-                                )) {
+                        )) {
                             isMiscBlock = true;
                         }
                     }
@@ -434,7 +434,7 @@ public class EventFinalBattle {
         }
         return false;
     }
-    
+
 
     //检测净化结构完整性
     public boolean onCheckStructure() {
@@ -456,9 +456,9 @@ public class EventFinalBattle {
             for (Object nearbyPlayer : nearbyPlayers) {
                 EntityPlayer otherPlayer = (EntityPlayer) nearbyPlayer;
                 if (Loader.isModLoaded("playerrevive")) {
-                if (PlayerReviveServer.isPlayerBleeding(otherPlayer)) {
-                    isNearBlock = false;
-                }
+                    if (PlayerReviveServer.isPlayerBleeding(otherPlayer)) {
+                        isNearBlock = false;
+                    }
                 }
                 otherPlayer.addPotionEffect(new PotionEffect(ModMobEffects.PARASITESPURIFY, 100, 0, false, false));
             }
@@ -615,7 +615,8 @@ public class EventFinalBattle {
             if (rank >= 2)
                 onEvoRemove(6000);
         } else if (updateTimer > 4802) {
-            SRPSaveData.get(fbWorld,0).setTotalKills(dim,-200,true, fbWorld,true);
+            int generation = SRPSaveData.get(fbWorld,0).getGeneration(dim);
+            SRPSaveData.get(fbWorld,0).setTotalKills(dim,-200,true, fbWorld,true, generation);
         }
         //世界净化开始
         switch (updateTimer) {
@@ -788,7 +789,7 @@ public class EventFinalBattle {
             for (int posY = -2; posY < -1; posY++) {
                 for (int posZ = -16; posZ <= 16; posZ++) {
                     if (checkBlockPos(posX + x, posY + y, posZ + z, Blocks.AIR)) {
-                            fbWorld.setBlockState(pos.add(posX, posY, posZ), blockState);
+                        fbWorld.setBlockState(pos.add(posX, posY, posZ), blockState);
                     }
                 }
             }

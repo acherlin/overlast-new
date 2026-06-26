@@ -111,7 +111,9 @@ public class OverUtil {
     }
 
     public void addEvoPoint(World world,int evoPoint) {
-        SRPSaveData.get(world,0).setTotalKills(world.provider.getDimension(), (int)(evoPoint*OverConfig.MECHANICS.naturalEvolutionScale), true, world,true);
+        int dim = world.provider.getDimension();
+        int generation = SRPSaveData.get(world,0).getGeneration(dim);
+        SRPSaveData.get(world,0).setTotalKills(dim, (int)(evoPoint*OverConfig.MECHANICS.naturalEvolutionScale), true, world,true, generation);
 
         //OverLast.logger.warn("实际增加点数："+(int)(evopoint*OverConfig.MECHANICS.naturalEvolutionScale)+" 比例"+OverConfig.MECHANICS.naturalEvolutionScale);
 
@@ -121,7 +123,9 @@ public class OverUtil {
         if(force) {
             setCooldown(world,0);
         }
-        SRPSaveData.get(world,0).setTotalKills(world.provider.getDimension(), (int)(evoPoint*OverConfig.MECHANICS.naturalEvolutionScale), true, world,true);
+        int dim = world.provider.getDimension();
+        int generation = SRPSaveData.get(world,0).getGeneration(dim);
+        SRPSaveData.get(world,0).setTotalKills(dim, (int)(evoPoint*OverConfig.MECHANICS.naturalEvolutionScale), true, world,true, generation);
 
     }
 
@@ -149,7 +153,7 @@ public class OverUtil {
         if(!contain&&OverConfig.CUSTOM.enableAutoFoodSan) {
             Item fItem = item.getItem();
             if (fItem instanceof ItemFood) {
-               int hunger = ((ItemFood) fItem).getHealAmount(item);
+                int hunger = ((ItemFood) fItem).getHealAmount(item);
                 if(hunger>=8) {
                     sanity.increase(4.0f);
                 }else if(hunger>=6) {
